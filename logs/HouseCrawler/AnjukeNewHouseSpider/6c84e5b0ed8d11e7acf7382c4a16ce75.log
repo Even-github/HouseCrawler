@@ -1,0 +1,65 @@
+2017-12-31 02:15:36 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: HouseCrawler)
+2017-12-31 02:15:36 [scrapy.utils.log] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 30, 'NEWSPIDER_MODULE': 'HouseCrawler.spiders', 'LOG_FILE': 'logs\\HouseCrawler\\AnjukeNewHouseSpider\\6c84e5b0ed8d11e7acf7382c4a16ce75.log', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'SPIDER_MODULES': ['HouseCrawler.spiders'], 'AUTOTHROTTLE_START_DELAY': 6, 'BOT_NAME': 'HouseCrawler', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 4, 'AUTOTHROTTLE_DEBUG': True}
+2017-12-31 02:15:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2017-12-31 02:15:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['HouseCrawler.middlewares.AnjukeUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-12-31 02:15:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-12-31 02:15:36 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-12-31 02:15:36 [scrapy.core.engine] INFO: Spider opened
+2017-12-31 02:15:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-12-31 02:15:36 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-12-31 02:15:37 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (-2000) | latency:  644 ms | size: 39176 bytes
+2017-12-31 02:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/gaoxin/> (referer: https://gz.fang.anjuke.com/)
+2017-12-31 02:15:42 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  432 ms | size: 43072 bytes
+2017-12-31 02:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/424139.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:15:47 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  509 ms | size: 36668 bytes
+2017-12-31 02:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/242974.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:15:52 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  316 ms | size: 35596 bytes
+2017-12-31 02:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/413610.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:15:57 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  309 ms | size: 35244 bytes
+2017-12-31 02:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/413616.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:02 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  371 ms | size: 39227 bytes
+2017-12-31 02:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/400794.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:07 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  342 ms | size: 40892 bytes
+2017-12-31 02:16:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/245853.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:13 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  493 ms | size: 40477 bytes
+2017-12-31 02:16:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/412589.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:18 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  376 ms | size: 39531 bytes
+2017-12-31 02:16:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/252056.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:23 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  383 ms | size: 36654 bytes
+2017-12-31 02:16:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/400775.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:27 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  369 ms | size: 39799 bytes
+2017-12-31 02:16:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/242818.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:32 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  332 ms | size: 39712 bytes
+2017-12-31 02:16:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/242508.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:36 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2017-12-31 02:16:37 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  429 ms | size: 40218 bytes
+2017-12-31 02:16:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/250050.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:42 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  365 ms | size: 42030 bytes
+2017-12-31 02:16:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/242925.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:47 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  398 ms | size: 40023 bytes
+2017-12-31 02:16:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/252524.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:51 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  404 ms | size: 40289 bytes
+2017-12-31 02:16:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/246279.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)
+2017-12-31 02:16:56 [scrapy.extensions.throttle] INFO: slot: xa.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  363 ms | size: 41023 bytes
+2017-12-31 02:16:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xa.fang.anjuke.com/loupan/272920.html> (referer: https://xa.fang.anjuke.com/loupan/gaoxin/)

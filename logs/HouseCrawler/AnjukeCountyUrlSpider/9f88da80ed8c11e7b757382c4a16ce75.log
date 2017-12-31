@@ -1,0 +1,90 @@
+2017-12-31 02:09:51 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: HouseCrawler)
+2017-12-31 02:09:51 [scrapy.utils.log] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 30, 'NEWSPIDER_MODULE': 'HouseCrawler.spiders', 'LOG_FILE': 'logs\\HouseCrawler\\AnjukeCountyUrlSpider\\9f88da80ed8c11e7b757382c4a16ce75.log', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'SPIDER_MODULES': ['HouseCrawler.spiders'], 'AUTOTHROTTLE_START_DELAY': 6, 'BOT_NAME': 'HouseCrawler', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 4, 'AUTOTHROTTLE_DEBUG': True}
+2017-12-31 02:09:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2017-12-31 02:09:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['HouseCrawler.middlewares.AnjukeUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-12-31 02:09:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-12-31 02:09:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-12-31 02:09:51 [scrapy.core.engine] INFO: Spider opened
+2017-12-31 02:09:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-12-31 02:09:51 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-12-31 02:09:52 [scrapy.extensions.throttle] INFO: slot: www.anjuke.com | conc: 1 | delay: 4000 ms (-2000) | latency:  266 ms | size: 14774 bytes
+2017-12-31 02:09:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.anjuke.com/sy-city.html> (referer: https://gz.fang.anjuke.com/)
+2017-12-31 02:10:22 [scrapy.extensions.throttle] INFO: slot: anshan.anjuke.com | conc: 1 | delay:27213 ms (+21213) | latency:27213 ms | size: 32627 bytes
+2017-12-31 02:10:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anshan.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:10:25 [scrapy.extensions.throttle] INFO: slot: anyang.anjuke.com | conc: 1 | delay:27223 ms (+21223) | latency:27223 ms | size: 32455 bytes
+2017-12-31 02:10:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anyang.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:10:28 [scrapy.extensions.throttle] INFO: slot: anqing.anjuke.com | conc: 1 | delay:27235 ms (+21235) | latency:27235 ms | size: 31400 bytes
+2017-12-31 02:10:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anqing.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:10:34 [scrapy.extensions.throttle] INFO: slot: ankang.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:30282 ms | size: 30647 bytes
+2017-12-31 02:10:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ankang.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:10:43 [scrapy.extensions.throttle] INFO: slot: anshun.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:36368 ms | size: 26690 bytes
+2017-12-31 02:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anshun.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:10:52 [scrapy.extensions.throttle] INFO: slot: anshan.anjuke.com | conc: 1 | delay:19687 ms (-7526) | latency:12161 ms | size: 34715 bytes
+2017-12-31 02:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anshan.anjuke.com/sale/> (referer: https://anshan.anjuke.com)
+2017-12-31 02:10:52 [scrapy.extensions.throttle] INFO: slot: aba.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:42457 ms | size: 21475 bytes
+2017-12-31 02:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://aba.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:10:58 [scrapy.extensions.logstats] INFO: Crawled 8 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2017-12-31 02:11:01 [scrapy.extensions.throttle] INFO: slot: akesu.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:48513 ms | size: 31409 bytes
+2017-12-31 02:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://akesu.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:11:11 [scrapy.extensions.throttle] INFO: slot: ali.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:55365 ms | size: 20948 bytes
+2017-12-31 02:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ali.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:11:20 [scrapy.extensions.throttle] INFO: slot: alaer.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:61407 ms | size: 21131 bytes
+2017-12-31 02:11:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://alaer.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:11:26 [scrapy.extensions.throttle] INFO: slot: alashanm.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:64442 ms | size: 20962 bytes
+2017-12-31 02:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://alashanm.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:11:35 [scrapy.extensions.throttle] INFO: slot: aomen.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:70504 ms | size: 21361 bytes
+2017-12-31 02:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://aomen.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:11:42 [scrapy.extensions.throttle] INFO: slot: anda.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:70517 ms | size:   154 bytes
+2017-12-31 02:11:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://ad.fang.anjuke.com/> from <GET https://anda.anjuke.com>
+2017-12-31 02:11:42 [scrapy.extensions.throttle] INFO: slot: as.fang.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:70540 ms | size: 28481 bytes
+2017-12-31 02:11:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://as.fang.anjuke.com/> (referer: https://anshan.anjuke.com)
+2017-12-31 02:11:48 [scrapy.extensions.throttle] INFO: slot: beijing.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:67485 ms | size: 42873 bytes
+2017-12-31 02:11:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://beijing.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:11:48 [scrapy.extensions.throttle] INFO: slot: ay.fang.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:67517 ms | size: 29355 bytes
+2017-12-31 02:11:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ay.fang.anjuke.com/> (referer: https://anyang.anjuke.com)
+2017-12-31 02:11:54 [scrapy.extensions.throttle] INFO: slot: aq.fang.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:64865 ms | size: 27507 bytes
+2017-12-31 02:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://aq.fang.anjuke.com/> (referer: https://anqing.anjuke.com)
+2017-12-31 02:11:54 [scrapy.extensions.throttle] INFO: slot: baoding.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:64858 ms | size: 37868 bytes
+2017-12-31 02:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baoding.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:11:54 [scrapy.extensions.throttle] INFO: slot: anyang.anjuke.com | conc: 1 | delay:30000 ms (+2776) | latency:64892 ms | size: 35486 bytes
+2017-12-31 02:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anyang.anjuke.com/sale/> (referer: https://anyang.anjuke.com)
+2017-12-31 02:11:55 [scrapy.extensions.logstats] INFO: Crawled 19 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2017-12-31 02:11:58 [scrapy.extensions.throttle] INFO: slot: baotou.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:59321 ms | size: 37470 bytes
+2017-12-31 02:11:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baotou.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:11:58 [scrapy.extensions.throttle] INFO: slot: anqing.anjuke.com | conc: 1 | delay:30000 ms (+2764) | latency:59335 ms | size: 35623 bytes
+2017-12-31 02:11:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://anqing.anjuke.com/sale/> (referer: https://anqing.anjuke.com)
+2017-12-31 02:11:58 [scrapy.extensions.throttle] INFO: slot: aomen.anjuke.com | conc: 1 | delay:16795 ms (-13204) | latency: 3590 ms | size: 29063 bytes
+2017-12-31 02:11:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://aomen.anjuke.com/sale/> (referer: https://aomen.anjuke.com)
+2017-12-31 02:11:58 [scrapy.extensions.throttle] INFO: slot: ank.fang.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:59368 ms | size: 27039 bytes
+2017-12-31 02:11:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ank.fang.anjuke.com/> (referer: https://ankang.anjuke.com)
+2017-12-31 02:12:05 [scrapy.extensions.throttle] INFO: slot: ankang.anjuke.com | conc: 1 | delay:30000 ms (+0) | latency:53358 ms | size: 32249 bytes
+2017-12-31 02:12:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ankang.anjuke.com/sale/> (referer: https://ankang.anjuke.com)
+2017-12-31 02:12:15 [scrapy.extensions.throttle] INFO: slot: baoji.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:63621 ms | size: 32889 bytes
+2017-12-31 02:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://baoji.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:12:25 [scrapy.extensions.throttle] INFO: slot: bengbu.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:64375 ms | size: 33414 bytes
+2017-12-31 02:12:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://bengbu.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:12:31 [scrapy.extensions.throttle] INFO: slot: benxi.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:64378 ms | size: 28521 bytes
+2017-12-31 02:12:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://benxi.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
+2017-12-31 02:12:37 [scrapy.extensions.throttle] INFO: slot: beihai.anjuke.com | conc: 1 | delay:30000 ms (+24000) | latency:61345 ms | size: 32076 bytes
+2017-12-31 02:12:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://beihai.anjuke.com> (referer: https://www.anjuke.com/sy-city.html)
