@@ -1,0 +1,32 @@
+2018-01-02 01:17:03 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: HouseCrawler)
+2018-01-02 01:17:03 [scrapy.utils.log] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 30, 'NEWSPIDER_MODULE': 'HouseCrawler.spiders', 'LOG_FILE': 'logs\\HouseCrawler\\AnjukeCountyUrlSpider\\93047a80ef1711e7ac5a382c4a16ce75.log', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'SPIDER_MODULES': ['HouseCrawler.spiders'], 'AUTOTHROTTLE_START_DELAY': 6, 'BOT_NAME': 'HouseCrawler', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 4, 'AUTOTHROTTLE_DEBUG': True}
+2018-01-02 01:17:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-01-02 01:17:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['HouseCrawler.middlewares.AnjukeUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-02 01:17:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-02 01:17:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-01-02 01:17:03 [scrapy.core.engine] INFO: Spider opened
+2018-01-02 01:17:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-02 01:17:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-01-02 01:17:08 [scrapy.extensions.throttle] INFO: slot: www.anjuke.com | conc: 1 | delay: 4000 ms (-2000) | latency:  223 ms | size: 14775 bytes
+2018-01-02 01:17:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.anjuke.com/sy-city.html> (referer: https://gz.fang.anjuke.com/)
