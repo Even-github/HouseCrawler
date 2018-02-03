@@ -4,7 +4,7 @@ import time
 import uuid
 
 from HouseCrawler.items import SpiderDataSourceItem
-from HouseCrawler.db.spider_data_source_table import SpiderDataSourceTable
+from HouseCrawler.mysqldb.spider_data_source_table import SpiderDataSourceTable
 from HouseCrawler.utils.cookies_util import CookiesUtil
 
 class AnjukeCountyUrlSpider(scrapy.Spider):

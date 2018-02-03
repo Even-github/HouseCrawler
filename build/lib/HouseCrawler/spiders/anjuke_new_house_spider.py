@@ -6,10 +6,10 @@ import uuid
 
 from HouseCrawler.utils.cookies_util import CookiesUtil
 from HouseCrawler.items import HousecrawlerItem
-from HouseCrawler.db.house_table import HouseTable
+from HouseCrawler.mysqldb.house_table import HouseTable
 from HouseCrawler.items import AddressItem
 from HouseCrawler.utils.string_util import StringUtil
-from HouseCrawler.db.province_city_table import ProvinceCity
+from HouseCrawler.mysqldb.province_city_table import ProvinceCity
 
 class AnjukeNewHouseSpider(scrapy.Spider):
     name = "AnjukeNewHouseSpider"

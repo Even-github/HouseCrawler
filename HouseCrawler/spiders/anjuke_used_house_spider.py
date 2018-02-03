@@ -3,17 +3,21 @@ import scrapy
 import time
 import re
 import uuid
+import redis
 
 from HouseCrawler.utils.cookies_util import CookiesUtil
 from HouseCrawler.items import HousecrawlerItem
 from HouseCrawler.items import AddressItem
-from HouseCrawler.db.house_table import HouseTable
+from HouseCrawler.mysqldb.house_table import HouseTable
 from HouseCrawler.utils.string_util import StringUtil
-from HouseCrawler.db.province_city_table import ProvinceCity
+from HouseCrawler.mysqldb.province_city_table import ProvinceCity
+from HouseCrawler.redis.connection_pool_creater import ConnectionPoolCreater
 
 class AnjukeUsedHouseSpider(scrapy.Spider):
     name = "AnjukeUsedHouseSpider"
     default_delay = 3
+    pool = ConnectionPoolCreater.get_pool()
+    redis_connection = redis.Redis(connection_pool=pool)
 
     def __init__(self, city, county, url, *args, **kwargs):
         super(AnjukeUsedHouseSpider, self).__init__(*args, **kwargs)
@@ -35,9 +39,11 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
         urls = response.xpath("//ul[@id='houselist-mod-new']/li[@class='list-item']/div[@class='house-details']/div[@class='house-title']/a/@href").extract()
         if urls:
             for url in urls:
-                yield scrapy.Request(url=url,
-                                     callback=self.parse_used_house_details,
-                                     cookies=self.cookies)
+                # 已经爬过的url不再爬
+                if self.redis_connection.sismember('crawledUrls', url) is False:
+                    yield scrapy.Request(url=url,
+                                         callback=self.parse_used_house_details,
+                                         cookies=self.cookies)
         next_page = response.xpath("//a[@class='aNxt']/@href").extract_first()
         if next_page:
             yield scrapy.Request(url=next_page,
@@ -65,7 +71,7 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
         item['description'] = None
         if item['city']:
             item['province'] = ProvinceCity.select_province_by_city(item['city'])
-        details_info = response.xpath("//div[@class='houseInfoV2-wrap']/div[@class='houseInfoV2-detail clearfix']")
+        details_info = response.xpath("//div[@class='block-wrap block-nocopy no-bd-top']/div/div")
         if details_info:
             first_col = details_info.xpath("./div[@class='first-col detail-col']")
             third_col = details_info.xpath("./div[@class='third-col detail-col']")
@@ -75,10 +81,8 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
                     item['house_name'] = re.sub(r'\s', '', house_name)
                 house_address_str = first_col.xpath("./dl[2]/dd/p/text()").extract()
                 if house_address_str:
-                    item['house_address'] = ''
-                    for s in house_address_str:
-                        s = re.sub(r'\s', '', s)
-                        item['house_address'] = item['house_address'] + s
+                    house_address = re.sub('\s|－', '', house_address_str[-1])
+                    item['house_address'] = house_address[1:]
                 build_year_str = first_col.xpath("./dl[3]/dd/text()").extract_first()
                 if build_year_str:
                     item['build_year'] = StringUtil.get_first_int_from_string(build_year_str)
@@ -88,13 +92,19 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
                     item['unit_price'] = StringUtil.get_first_int_from_string(unit_price_str)
                 down_payment_str = third_col.xpath("./dl[3]/dd/text()").extract_first()
                 if down_payment_str:
-                    item['down_payment'] = StringUtil.get_first_float_from_string(down_payment_str)
-                monthly_payment_str = third_col.xpath("./dl[4]/dd/sapn/text()").extract_first()
+                    item['down_payment'] = StringUtil.get_first_number_from_string(down_payment_str)
+                monthly_payment_str = third_col.xpath("./dl[4]/dd/span/text()").extract_first()
                 if monthly_payment_str:
-                    item['monthly_payment'] = StringUtil.get_first_float_from_string(monthly_payment_str)
+                    item['monthly_payment'] = StringUtil.get_first_number_from_string(monthly_payment_str)
         total_price = response.xpath("//div[@class='basic-info clearfix']/span[@class='light info-tag']/em/text()").extract_first()
         if total_price:
             item['total_price'] = re.sub(r'\s', '', total_price)
         print item  # 测试用
-        HouseTable.save_data(data=item)
+        self.redis_connection.sadd('crawledUrls', response.url)
+        self.check_and_save(item=item)
         return item
+
+    def check_and_save(self, item):
+        if item:
+            if item['unit_price']:
+                HouseTable.save_data(data=item)

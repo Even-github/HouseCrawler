@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from HouseCrawler.db.base_table import BaseTable
+from HouseCrawler.mysqldb.base_table import BaseTable
 
 class SpiderDataSourceTable(BaseTable):
     @classmethod

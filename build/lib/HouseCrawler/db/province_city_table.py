@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import MySQLdb
 
-from HouseCrawler.db.base_table import BaseTable
+from HouseCrawler.mysqldb.base_table import BaseTable
 
 class ProvinceCity(BaseTable):
     @classmethod
