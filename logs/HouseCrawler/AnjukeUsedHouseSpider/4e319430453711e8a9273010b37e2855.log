@@ -1,0 +1,1107 @@
+2018-04-21 15:40:50 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: HouseCrawler)
+2018-04-21 15:40:50 [scrapy.utils.log] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 30, 'NEWSPIDER_MODULE': 'HouseCrawler.spiders', 'LOG_FILE': 'logs\\HouseCrawler\\AnjukeUsedHouseSpider\\4e319430453711e8a9273010b37e2855.log', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'SPIDER_MODULES': ['HouseCrawler.spiders'], 'AUTOTHROTTLE_START_DELAY': 6, 'BOT_NAME': 'HouseCrawler', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 4, 'AUTOTHROTTLE_DEBUG': True}
+2018-04-21 15:40:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-04-21 15:40:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['HouseCrawler.middlewares.AnjukeUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-21 15:40:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-21 15:40:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-04-21 15:40:51 [scrapy.core.engine] INFO: Spider opened
+2018-04-21 15:40:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-21 15:40:51 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-04-21 15:40:53 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (-2000) | latency: 1677 ms | size: 25613 bytes
+2018-04-21 15:40:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/sale/lvlianglx/> (referer: https://gz.fang.anjuke.com/)
+2018-04-21 15:40:57 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  253 ms | size: 21816 bytes
+2018-04-21 15:40:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H309975606?from=filter&spread=filtersearch_p&position=1&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:40:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H309975606?from=filter&spread=filtersearch_p&position=1&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296458.071,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '54a97670-4537-11e8-8d5b-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'32',
+ 'type': u'used',
+ 'unit_price': u'9',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H309975606?from=filter&spread=filtersearch_p&position=1&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:02 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  190 ms | size: 21751 bytes
+2018-04-21 15:41:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H352067335?from=filter&spread=filtersearch_p&position=12&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H352067335?from=filter&spread=filtersearch_p&position=12&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296462.17,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '571aeba1-4537-11e8-ab71-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'57',
+ 'type': u'used',
+ 'unit_price': u'17',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H352067335?from=filter&spread=filtersearch_p&position=12&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:05 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  243 ms | size: 21657 bytes
+2018-04-21 15:41:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H398563424?from=filter&spread=filtersearch_p&position=11&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H398563424?from=filter&spread=filtersearch_p&position=11&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296465.689,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '5933e08f-4537-11e8-a4b6-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'35',
+ 'type': u'used',
+ 'unit_price': u'10',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H398563424?from=filter&spread=filtersearch_p&position=11&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:10 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  190 ms | size: 21891 bytes
+2018-04-21 15:41:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H188251109?from=filter&spread=filtersearch_p&position=10&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H188251109?from=filter&spread=filtersearch_p&position=10&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296470.649,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '5c288f80-4537-11e8-89a5-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'59',
+ 'type': u'used',
+ 'unit_price': u'17',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H188251109?from=filter&spread=filtersearch_p&position=10&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:16 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  197 ms | size: 21826 bytes
+2018-04-21 15:41:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H330914140?from=filter&spread=filtersearch_p&position=9&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H330914140?from=filter&spread=filtersearch_p&position=9&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296476.32,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '5f8a0a00-4537-11e8-9e17-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'30',
+ 'type': u'used',
+ 'unit_price': u'9',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H330914140?from=filter&spread=filtersearch_p&position=9&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:20 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  233 ms | size: 21574 bytes
+2018-04-21 15:41:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H262178113?from=filter&spread=filtersearch_p&position=8&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H262178113?from=filter&spread=filtersearch_p&position=8&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296480.371,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '61f42c30-4537-11e8-9b1d-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'70',
+ 'type': u'used',
+ 'unit_price': u'21',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H262178113?from=filter&spread=filtersearch_p&position=8&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:25 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  185 ms | size: 21804 bytes
+2018-04-21 15:41:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H517087612?from=filter&spread=filtersearch_p&position=7&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H517087612?from=filter&spread=filtersearch_p&position=7&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296485.909,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '6541344f-4537-11e8-928e-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'14',
+ 'type': u'used',
+ 'unit_price': u'4',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H517087612?from=filter&spread=filtersearch_p&position=7&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:30 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  203 ms | size: 21613 bytes
+2018-04-21 15:41:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H308545109?from=filter&spread=filtersearch_p&position=6&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H308545109?from=filter&spread=filtersearch_p&position=6&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296490.422,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '67f1d55e-4537-11e8-8164-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'15',
+ 'type': u'used',
+ 'unit_price': u'4',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H308545109?from=filter&spread=filtersearch_p&position=6&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:32 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  148 ms | size: 21673 bytes
+2018-04-21 15:41:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H303034304?from=filter&spread=filtersearch_p&position=5&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H303034304?from=filter&spread=filtersearch_p&position=5&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296493.049,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '6982ae8f-4537-11e8-844b-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'16',
+ 'type': u'used',
+ 'unit_price': u'4',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H303034304?from=filter&spread=filtersearch_p&position=5&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:35 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  152 ms | size: 21603 bytes
+2018-04-21 15:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H245789332?from=filter&spread=filtersearch_p&position=4&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H245789332?from=filter&spread=filtersearch_p&position=4&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296495.445,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '6af0484f-4537-11e8-ab8f-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'23',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H245789332?from=filter&spread=filtersearch_p&position=4&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:40 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  128 ms | size: 21758 bytes
+2018-04-21 15:41:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H256426497?from=filter&spread=filtersearch_p&position=3&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H256426497?from=filter&spread=filtersearch_p&position=3&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296500.543,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '6dfa2cf0-4537-11e8-a842-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'10',
+ 'type': u'used',
+ 'unit_price': u'3',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H256426497?from=filter&spread=filtersearch_p&position=3&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:45 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  138 ms | size: 22248 bytes
+2018-04-21 15:41:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H412010039?from=filter&spread=filtersearch_p&position=2&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H412010039?from=filter&spread=filtersearch_p&position=2&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296505.322,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '70d364a1-4537-11e8-8277-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'21',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H412010039?from=filter&spread=filtersearch_p&position=2&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:49 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  148 ms | size: 21669 bytes
+2018-04-21 15:41:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H417143893?from=filter&spread=filtersearch_p&position=30&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H417143893?from=filter&spread=filtersearch_p&position=30&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296509.958,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '7396ca5e-4537-11e8-b9d9-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'32',
+ 'type': u'used',
+ 'unit_price': u'9',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H417143893?from=filter&spread=filtersearch_p&position=30&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:41:51 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 14 pages/min), scraped 13 items (at 13 items/min)
+2018-04-21 15:41:55 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  154 ms | size: 21656 bytes
+2018-04-21 15:41:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H235170878?from=filter&spread=filtersearch_p&position=29&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:41:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H235170878?from=filter&spread=filtersearch_p&position=29&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296515.711,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '7704a0f0-4537-11e8-a2d8-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'28',
+ 'type': u'used',
+ 'unit_price': u'8',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H235170878?from=filter&spread=filtersearch_p&position=29&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:00 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  186 ms | size: 21622 bytes
+2018-04-21 15:42:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H317881724?from=filter&spread=filtersearch_p&position=28&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H317881724?from=filter&spread=filtersearch_p&position=28&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296521.066,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '7a35bc9e-4537-11e8-a3d7-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'20',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H317881724?from=filter&spread=filtersearch_p&position=28&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:05 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  230 ms | size: 21646 bytes
+2018-04-21 15:42:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H170946172?from=filter&spread=filtersearch_p&position=27&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H170946172?from=filter&spread=filtersearch_p&position=27&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296525.875,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '7d138830-4537-11e8-b1cf-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'24',
+ 'type': u'used',
+ 'unit_price': u'7',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H170946172?from=filter&spread=filtersearch_p&position=27&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:11 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  306 ms | size: 25594 bytes
+2018-04-21 15:42:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/sale/lvlianglx/p2/#filtersort> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:13 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  170 ms | size: 21694 bytes
+2018-04-21 15:42:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/E452495645?from=filter&spread=filtersearch_p&position=59&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/E452495645?from=filter&spread=filtersearch_p&position=59&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296533.988,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '81e97a40-4537-11e8-9c2a-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'54',
+ 'type': u'used',
+ 'unit_price': u'16',
+ 'url': 'https://lvliang.anjuke.com/prop/view/E452495645?from=filter&spread=filtersearch_p&position=59&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:18 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  167 ms | size: 21680 bytes
+2018-04-21 15:42:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H216837338?from=filter&spread=filtersearch_p&position=58&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H216837338?from=filter&spread=filtersearch_p&position=58&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296538.152,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '8464da80-4537-11e8-8a5e-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'50',
+ 'type': u'used',
+ 'unit_price': u'15',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H216837338?from=filter&spread=filtersearch_p&position=58&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:23 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  148 ms | size: 21792 bytes
+2018-04-21 15:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H307686465?from=filter&spread=filtersearch_p&position=57&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H307686465?from=filter&spread=filtersearch_p&position=57&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296544.077,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '87ecefcf-4537-11e8-a512-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'62',
+ 'type': u'used',
+ 'unit_price': u'18',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H307686465?from=filter&spread=filtersearch_p&position=57&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:29 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  169 ms | size: 21495 bytes
+2018-04-21 15:42:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H242315085?from=filter&spread=filtersearch_p&position=56&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H242315085?from=filter&spread=filtersearch_p&position=56&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296549.92,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '8b688200-4537-11e8-997d-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'35',
+ 'type': u'used',
+ 'unit_price': u'10',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H242315085?from=filter&spread=filtersearch_p&position=56&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:35 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  157 ms | size: 21605 bytes
+2018-04-21 15:42:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H245265288?from=filter&spread=filtersearch_p&position=55&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H245265288?from=filter&spread=filtersearch_p&position=55&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296555.417,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '8eaf488f-4537-11e8-8b63-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'35',
+ 'type': u'used',
+ 'unit_price': u'10',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H245265288?from=filter&spread=filtersearch_p&position=55&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:40 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  149 ms | size: 21899 bytes
+2018-04-21 15:42:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/E400980138?from=filter&spread=filtersearch_p&position=54&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/E400980138?from=filter&spread=filtersearch_p&position=54&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296560.889,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '91f23e8f-4537-11e8-b914-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'58',
+ 'type': u'used',
+ 'unit_price': u'17',
+ 'url': 'https://lvliang.anjuke.com/prop/view/E400980138?from=filter&spread=filtersearch_p&position=54&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:45 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  132 ms | size: 21949 bytes
+2018-04-21 15:42:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/E519485807?from=filter&spread=filtersearch_p&position=53&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/E519485807?from=filter&spread=filtersearch_p&position=53&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296566.055,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '95068370-4537-11e8-aa8c-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'32',
+ 'type': u'used',
+ 'unit_price': u'9',
+ 'url': 'https://lvliang.anjuke.com/prop/view/E519485807?from=filter&spread=filtersearch_p&position=53&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:50 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  157 ms | size: 21561 bytes
+2018-04-21 15:42:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H326949398?from=filter&spread=filtersearch_p&position=52&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H326949398?from=filter&spread=filtersearch_p&position=52&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296571.053,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '980125cf-4537-11e8-acd4-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'30',
+ 'type': u'used',
+ 'unit_price': u'9',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H326949398?from=filter&spread=filtersearch_p&position=52&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:42:51 [scrapy.extensions.logstats] INFO: Crawled 26 pages (at 12 pages/min), scraped 24 items (at 11 items/min)
+2018-04-21 15:42:56 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  201 ms | size: 21557 bytes
+2018-04-21 15:42:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H312074213?from=filter&spread=filtersearch_p&position=51&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:42:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H312074213?from=filter&spread=filtersearch_p&position=51&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296576.792,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '9b6cd980-4537-11e8-a04f-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'36',
+ 'type': u'used',
+ 'unit_price': u'10',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H312074213?from=filter&spread=filtersearch_p&position=51&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:43:00 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  141 ms | size: 21787 bytes
+2018-04-21 15:43:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H426280775?from=filter&spread=filtersearch_p&position=50&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:43:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H426280775?from=filter&spread=filtersearch_p&position=50&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296580.207,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '9d75eff0-4537-11e8-9b67-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'60',
+ 'type': u'used',
+ 'unit_price': u'18',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H426280775?from=filter&spread=filtersearch_p&position=50&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:43:05 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  158 ms | size: 21608 bytes
+2018-04-21 15:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H281805442?from=filter&spread=filtersearch_p&position=49&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H281805442?from=filter&spread=filtersearch_p&position=49&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296585.163,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'a06a29b0-4537-11e8-ae59-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'45',
+ 'type': u'used',
+ 'unit_price': u'13',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H281805442?from=filter&spread=filtersearch_p&position=49&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:43:10 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  126 ms | size: 21697 bytes
+2018-04-21 15:43:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H443627683?from=filter&spread=filtersearch_p&position=48&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:43:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H443627683?from=filter&spread=filtersearch_p&position=48&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296590.311,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'a37baf70-4537-11e8-a636-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'60',
+ 'type': u'used',
+ 'unit_price': u'18',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H443627683?from=filter&spread=filtersearch_p&position=48&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:43:13 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  257 ms | size: 21758 bytes
+2018-04-21 15:43:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H302549677?from=filter&spread=filtersearch_p&position=47&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:43:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H302549677?from=filter&spread=filtersearch_p&position=47&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296593.847,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'a5973c6e-4537-11e8-9555-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'32',
+ 'type': u'used',
+ 'unit_price': u'9',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H302549677?from=filter&spread=filtersearch_p&position=47&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:43:18 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  217 ms | size: 21599 bytes
+2018-04-21 15:43:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H283750623?from=filter&spread=filtersearch_p&position=46&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:43:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H283750623?from=filter&spread=filtersearch_p&position=46&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296598.446,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'a854fce1-4537-11e8-a134-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'28',
+ 'type': u'used',
+ 'unit_price': u'8',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H283750623?from=filter&spread=filtersearch_p&position=46&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:43:24 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  246 ms | size: 21559 bytes
+2018-04-21 15:43:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H171558240?from=filter&spread=filtersearch_p&position=45&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:43:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H171558240?from=filter&spread=filtersearch_p&position=45&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296604.233,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'abc8038f-4537-11e8-8351-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'22',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H171558240?from=filter&spread=filtersearch_p&position=45&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:43:27 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  295 ms | size: 21722 bytes
+2018-04-21 15:43:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H485284397?from=filter&spread=filtersearch_p&position=44&kwtype=filter&now_time=1524296453> (referer: https://lvliang.anjuke.com/sale/lvlianglx/)
+2018-04-21 15:43:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H485284397?from=filter&spread=filtersearch_p&position=44&kwtype=filter&now_time=1524296453>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296607.503,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'adbaf9f0-4537-11e8-a2d2-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'36',
+ 'type': u'used',
+ 'unit_price': u'10',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H485284397?from=filter&spread=filtersearch_p&position=44&kwtype=filter&now_time=1524296453'}
+2018-04-21 15:43:31 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  357 ms | size: 25441 bytes
+2018-04-21 15:43:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/sale/lvlianglx/p3/#filtersort> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:43:35 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  195 ms | size: 21691 bytes
+2018-04-21 15:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H463783139?from=filter&spread=commsearch_p&position=115&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:43:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H463783139?from=filter&spread=commsearch_p&position=115&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296615.875,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'b2b87130-4537-11e8-94cc-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'68',
+ 'type': u'used',
+ 'unit_price': u'20',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H463783139?from=filter&spread=commsearch_p&position=115&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:43:40 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  128 ms | size: 21812 bytes
+2018-04-21 15:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H319557803?from=filter&spread=commsearch_p&position=114&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:43:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H319557803?from=filter&spread=commsearch_p&position=114&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296620.223,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'b54fe4f0-4537-11e8-9c3e-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'26',
+ 'type': u'used',
+ 'unit_price': u'7',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H319557803?from=filter&spread=commsearch_p&position=114&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:43:45 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  151 ms | size: 21698 bytes
+2018-04-21 15:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/E504945379?from=filter&spread=commsearch_p&position=113&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:43:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/E504945379?from=filter&spread=commsearch_p&position=113&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296625.696,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'b8930200-4537-11e8-a51b-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'33',
+ 'type': u'used',
+ 'unit_price': u'9',
+ 'url': 'https://lvliang.anjuke.com/prop/view/E504945379?from=filter&spread=commsearch_p&position=113&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:43:49 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  146 ms | size: 21736 bytes
+2018-04-21 15:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H443627683?from=filter&spread=commsearch_p&position=112&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H443627683?from=filter&spread=commsearch_p&position=112&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296629.808,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'bb067300-4537-11e8-999d-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'60',
+ 'type': u'used',
+ 'unit_price': u'18',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H443627683?from=filter&spread=commsearch_p&position=112&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:43:51 [scrapy.extensions.logstats] INFO: Crawled 39 pages (at 13 pages/min), scraped 36 items (at 12 items/min)
+2018-04-21 15:43:55 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  144 ms | size: 21654 bytes
+2018-04-21 15:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/E369344203?from=filter&spread=commsearch_p&position=111&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:43:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/E369344203?from=filter&spread=commsearch_p&position=111&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296635.485,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'be68b0cf-4537-11e8-bab6-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'50',
+ 'type': u'used',
+ 'unit_price': u'15',
+ 'url': 'https://lvliang.anjuke.com/prop/view/E369344203?from=filter&spread=commsearch_p&position=111&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:00 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  139 ms | size: 21576 bytes
+2018-04-21 15:44:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H302621204?from=filter&spread=commsearch_p&position=110&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H302621204?from=filter&spread=commsearch_p&position=110&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296640.686,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'c1824ce1-4537-11e8-b5cc-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'26',
+ 'type': u'used',
+ 'unit_price': u'7',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H302621204?from=filter&spread=commsearch_p&position=110&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:04 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  156 ms | size: 21615 bytes
+2018-04-21 15:44:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H317692593?from=filter&spread=commsearch_p&position=109&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H317692593?from=filter&spread=commsearch_p&position=109&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296645.047,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'c41bbc6e-4537-11e8-9f6d-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'10',
+ 'type': u'used',
+ 'unit_price': u'3',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H317692593?from=filter&spread=commsearch_p&position=109&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:10 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  226 ms | size: 21494 bytes
+2018-04-21 15:44:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H201341930?from=filter&spread=commsearch_p&position=108&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H201341930?from=filter&spread=commsearch_p&position=108&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296650.904,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'c7997180-4537-11e8-bfda-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'24',
+ 'type': u'used',
+ 'unit_price': u'7',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H201341930?from=filter&spread=commsearch_p&position=108&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:16 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  151 ms | size: 21668 bytes
+2018-04-21 15:44:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H283747632?from=filter&spread=commsearch_p&position=107&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H283747632?from=filter&spread=commsearch_p&position=107&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296656.105,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'cab30d8f-4537-11e8-ad8c-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'28',
+ 'type': u'used',
+ 'unit_price': u'8',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H283747632?from=filter&spread=commsearch_p&position=107&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:21 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  131 ms | size: 21546 bytes
+2018-04-21 15:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H312074213?from=filter&spread=commsearch_p&position=106&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H312074213?from=filter&spread=commsearch_p&position=106&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296661.686,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'ce06a561-4537-11e8-b90c-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'36',
+ 'type': u'used',
+ 'unit_price': u'10',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H312074213?from=filter&spread=commsearch_p&position=106&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:26 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  142 ms | size: 21525 bytes
+2018-04-21 15:44:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H317165633?from=filter&spread=commsearch_p&position=105&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H317165633?from=filter&spread=commsearch_p&position=105&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296666.305,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'd0c77311-4537-11e8-8186-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'38',
+ 'type': u'used',
+ 'unit_price': u'11',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H317165633?from=filter&spread=commsearch_p&position=105&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:30 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  135 ms | size: 21645 bytes
+2018-04-21 15:44:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H391430642?from=filter&spread=commsearch_p&position=104&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H391430642?from=filter&spread=commsearch_p&position=104&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296670.921,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'd387cb8f-4537-11e8-9f7e-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'25.6',
+ 'type': u'used',
+ 'unit_price': u'7',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H391430642?from=filter&spread=commsearch_p&position=104&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:37 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency: 3900 ms | size: 21712 bytes
+2018-04-21 15:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/E495728801?from=filter&spread=commsearch_p&position=103&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/E495728801?from=filter&spread=commsearch_p&position=103&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296677.757,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'd79ae2cf-4537-11e8-9d58-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'22',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/E495728801?from=filter&spread=commsearch_p&position=103&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:44:51 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 9 pages/min), scraped 45 items (at 9 items/min)
+2018-04-21 15:44:54 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay:15485 ms (+11485) | latency:15485 ms | size: 21697 bytes
+2018-04-21 15:44:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H434740103?from=filter&spread=commsearch_p&position=102&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H434740103?from=filter&spread=commsearch_p&position=102&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296695.068,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'e1ec55c0-4537-11e8-bce2-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'20',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H434740103?from=filter&spread=commsearch_p&position=102&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:45:02 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 7864 ms (-7621) | latency:  243 ms | size: 21704 bytes
+2018-04-21 15:45:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H325929642?from=filter&spread=commsearch_p&position=101&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:45:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H325929642?from=filter&spread=commsearch_p&position=101&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296702.143,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'e623e4ee-4537-11e8-9505-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'45',
+ 'type': u'used',
+ 'unit_price': u'13',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H325929642?from=filter&spread=commsearch_p&position=101&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:45:15 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4014 ms (-3849) | latency:  164 ms | size: 21532 bytes
+2018-04-21 15:45:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H343605167?from=filter&spread=commsearch_p&position=100&kwtype=filter&now_time=1524296531> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p2/)
+2018-04-21 15:45:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H343605167?from=filter&spread=commsearch_p&position=100&kwtype=filter&now_time=1524296531>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296715.509,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'ee1b624f-4537-11e8-aed7-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'23',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H343605167?from=filter&spread=commsearch_p&position=100&kwtype=filter&now_time=1524296531'}
+2018-04-21 15:45:20 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (-14) | latency:  212 ms | size: 25666 bytes
+2018-04-21 15:45:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/sale/lvlianglx/p4/#filtersort> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:25 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  159 ms | size: 22030 bytes
+2018-04-21 15:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H328662086?from=filter&spread=commsearch_p&position=177&kwtype=filter&now_time=1524296610> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H328662086?from=filter&spread=commsearch_p&position=177&kwtype=filter&now_time=1524296610>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296725.668,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'f4298640-4537-11e8-9450-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'23',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H328662086?from=filter&spread=commsearch_p&position=177&kwtype=filter&now_time=1524296610'}
+2018-04-21 15:45:30 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  135 ms | size: 21962 bytes
+2018-04-21 15:45:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H302238500?from=filter&spread=commsearch_p&position=176&kwtype=filter&now_time=1524296610> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H302238500?from=filter&spread=commsearch_p&position=176&kwtype=filter&now_time=1524296610>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296730.445,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'f7026fcf-4537-11e8-a960-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'34',
+ 'type': u'used',
+ 'unit_price': u'10',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H302238500?from=filter&spread=commsearch_p&position=176&kwtype=filter&now_time=1524296610'}
+2018-04-21 15:45:34 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  179 ms | size: 21717 bytes
+2018-04-21 15:45:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/E452495645?from=filter&spread=commsearch_p&position=175&kwtype=filter&now_time=1524296610> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/E452495645?from=filter&spread=commsearch_p&position=175&kwtype=filter&now_time=1524296610>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296735.009,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'f9bad90f-4537-11e8-a9d6-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'54',
+ 'type': u'used',
+ 'unit_price': u'16',
+ 'url': 'https://lvliang.anjuke.com/prop/view/E452495645?from=filter&spread=commsearch_p&position=175&kwtype=filter&now_time=1524296610'}
+2018-04-21 15:45:39 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 21629 bytes
+2018-04-21 15:45:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H248566157?from=filter&spread=commsearch_p&position=174&kwtype=filter&now_time=1524296610> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H248566157?from=filter&spread=commsearch_p&position=174&kwtype=filter&now_time=1524296610>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296739.542,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'fc6e8761-4537-11e8-8c91-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'45',
+ 'type': u'used',
+ 'unit_price': u'13',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H248566157?from=filter&spread=commsearch_p&position=174&kwtype=filter&now_time=1524296610'}
+2018-04-21 15:45:44 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  187 ms | size: 21560 bytes
+2018-04-21 15:45:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H183377636?from=filter&spread=commsearch_p&position=173&kwtype=filter&now_time=1524296610> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H183377636?from=filter&spread=commsearch_p&position=173&kwtype=filter&now_time=1524296610>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296744.573,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': 'ff6e32cf-4537-11e8-a04d-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'35',
+ 'type': u'used',
+ 'unit_price': u'10',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H183377636?from=filter&spread=commsearch_p&position=173&kwtype=filter&now_time=1524296610'}
+2018-04-21 15:45:48 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  365 ms | size: 21745 bytes
+2018-04-21 15:45:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H275028200?from=filter&spread=commsearch_p&position=172&kwtype=filter&now_time=1524296610> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H275028200?from=filter&spread=commsearch_p&position=172&kwtype=filter&now_time=1524296610>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296748.486,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '01c34661-4538-11e8-aef8-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'20',
+ 'type': u'used',
+ 'unit_price': u'6',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H275028200?from=filter&spread=commsearch_p&position=172&kwtype=filter&now_time=1524296610'}
+2018-04-21 15:45:51 [scrapy.extensions.logstats] INFO: Crawled 58 pages (at 10 pages/min), scraped 54 items (at 9 items/min)
+2018-04-21 15:45:53 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  144 ms | size: 21574 bytes
+2018-04-21 15:45:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/E284232119?from=filter&spread=commsearch_p&position=171&kwtype=filter&now_time=1524296610> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/E284232119?from=filter&spread=commsearch_p&position=171&kwtype=filter&now_time=1524296610>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296753.579,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '04cc67b0-4538-11e8-a345-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'15',
+ 'type': u'used',
+ 'unit_price': u'4',
+ 'url': 'https://lvliang.anjuke.com/prop/view/E284232119?from=filter&spread=commsearch_p&position=171&kwtype=filter&now_time=1524296610'}
+2018-04-21 15:45:58 [scrapy.extensions.throttle] INFO: slot: lvliang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  130 ms | size: 21607 bytes
+2018-04-21 15:45:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lvliang.anjuke.com/prop/view/H212641327?from=filter&spread=commsearch_p&position=170&kwtype=filter&now_time=1524296610> (referer: https://lvliang.anjuke.com/sale/lvlianglx/p3/)
+2018-04-21 15:45:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://lvliang.anjuke.com/prop/view/H212641327?from=filter&spread=commsearch_p&position=170&kwtype=filter&now_time=1524296610>
+{'build_year': None,
+ 'city': '\xe5\x90\x95\xe6\xa2\x81',
+ 'county': '\xe4\xb8\xb4\xe5\x8e\xbf',
+ 'crawl_time': 1524296758.988,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '0805c0c0-4538-11e8-89ce-3010b37e2855',
+ 'monthly_payment': None,
+ 'province': u'\u5c71\u897f',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'58',
+ 'type': u'used',
+ 'unit_price': u'17',
+ 'url': 'https://lvliang.anjuke.com/prop/view/H212641327?from=filter&spread=commsearch_p&position=170&kwtype=filter&now_time=1524296610'}

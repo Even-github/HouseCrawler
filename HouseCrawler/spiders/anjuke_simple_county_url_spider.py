@@ -7,26 +7,18 @@ from HouseCrawler.items import SpiderDataSourceItem
 from HouseCrawler.mysqldb.spider_data_source_table import SpiderDataSourceTable
 from HouseCrawler.utils.cookies_util import CookiesUtil
 
-class AnjukeCountyUrlSpider(scrapy.Spider):
-    name = "AnjukeCountyUrlSpider"
-    start_urls = ['https://www.anjuke.com/sy-city.html']
+class AnjukeSimpleCountyUrlSpider(scrapy.Spider):
+    name = "AnjukeSimpleCountyUrlSpider"
     default_delay = 3
 
-    def __init__(self, *args, **kwargs):
-        super(AnjukeCountyUrlSpider, self).__init__(*args, **kwargs)
+    def __init__(self, url, *args, **kwargs):
+        super(AnjukeSimpleCountyUrlSpider, self).__init__(*args, **kwargs)
         self.cookies = CookiesUtil.get_anjuke_cookies()
+        self.start_urls = [url]
 
     def start_requests(self):
         for url in self.start_urls:
-            yield scrapy.Request(url=url, callback=self.parse_city, cookies=self.cookies)
-
-    # 解析城市url
-    def parse_city(self, response):
-        city_urls = response.xpath("//div[@class='city_list']/a/@href").extract()
-        if city_urls:
-            for url in city_urls:
-                time.sleep(self.default_delay)  # 限速
-                yield scrapy.Request(url=url, callback=self.parse_navigation, cookies=self.cookies)
+            yield scrapy.Request(url=url, callback=self.parse_navigation, cookies=self.cookies)
 
     # 解析导航栏中的新房和二手房的url
     def parse_navigation(self, response):

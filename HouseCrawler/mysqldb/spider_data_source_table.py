@@ -15,8 +15,8 @@ class SpiderDataSourceTable(BaseTable):
             try:
                 if int(amount[0]) > 0:
                     sql = "update spider_data_source set url=%s " \
-                          "where source_name=%s and type=%s and city=%s"
-                    cursor.execute(sql, (data['url'], data['source_name'], data['type'], data['city']))
+                          "where source_name=%s and type=%s and city=%s and county=%s"
+                    cursor.execute(sql, (data['url'], data['source_name'], data['type'], data['city'], data['county']))
                     print sql
                 else:
                     sql = "insert into spider_data_source values " \

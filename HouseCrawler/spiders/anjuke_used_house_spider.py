@@ -15,7 +15,7 @@ from HouseCrawler.redis.connection_pool_creater import ConnectionPoolCreater
 
 class AnjukeUsedHouseSpider(scrapy.Spider):
     name = "AnjukeUsedHouseSpider"
-    default_delay = 3
+    default_delay = 1000
     pool = ConnectionPoolCreater.get_pool()
     redis_connection = redis.Redis(connection_pool=pool)
 
@@ -24,10 +24,16 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
         if url:
             self.start_urls = [url]
             self.address = AddressItem()
-            if city:
-                self.address['city'] = city.decode('gbk')
-            if county:
-                self.address['county'] = county.decode('gbk')
+            # 计算爬取页面的数量，当数量大于一定数量时，暂停爬虫一段时间
+            self.count = 0
+            # 控制台执行时，用下列四行代码
+            # if city:
+            #     self.address['city'] = city.decode('gbk') # 控制台的编码方式是gbk，此处需要按gbk解码
+            # if county:
+            #     self.address['county'] = county.decode('gbk')
+            # HTTP调用时，用下列两行代码
+            self.address['city'] = city
+            self.address['county'] = county
         self.cookies = CookiesUtil.get_anjuke_cookies()
 
     def start_requests(self):
@@ -41,6 +47,12 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
             for url in urls:
                 # 已经爬过的url不再爬
                 if self.redis_connection.sismember('crawledUrls', url) is False:
+                    self.count = self.count + 1
+                    # 爬取一定数量的页面后，暂停一段时间
+                    if self.count > 430:
+                        print 'Spider is preparing to sleep...'
+                        time.sleep(self.default_delay)
+                        self.count = 0
                     yield scrapy.Request(url=url,
                                          callback=self.parse_used_house_details,
                                          cookies=self.cookies)

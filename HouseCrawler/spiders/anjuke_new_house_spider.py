@@ -24,10 +24,14 @@ class AnjukeNewHouseSpider(scrapy.Spider):
         if url:
             self.start_urls = [url]
             self.address = AddressItem()
-            if city:
-                self.address['city'] = city.decode('gbk') # 控制台的编码方式是gbk，此处需要按gbk解码
-            if county:
-                self.address['county'] = county.decode('gbk')
+            # 控制台执行时，用下列四行代码
+            # if city:
+            #     self.address['city'] = city.decode('gbk') # 控制台的编码方式是gbk，此处需要按gbk解码
+            # if county:
+            #     self.address['county'] = county.decode('gbk')
+            # HTTP调用时，用下列两行代码
+            self.address['city'] = city
+            self.address['county'] = county
         self.cookies = CookiesUtil.get_anjuke_cookies()
 
     def start_requests(self):
@@ -98,7 +102,7 @@ class AnjukeNewHouseSpider(scrapy.Spider):
                 if u'参考单价' == label:
                     unit_price = li.xpath("./div[@class='des']/span/text()").extract_first()
                     if unit_price:
-                        item['unit_price'] = re.sub(r'\s', '', unit_price)
+                        item['unit_price'] = StringUtil.get_first_int_from_string(unit_price)
                     continue
                 if u'楼盘总价' == label:
                     total_price = li.xpath("./div[@class='des']/span/text()").extract_first()
@@ -127,7 +131,7 @@ class AnjukeNewHouseSpider(scrapy.Spider):
                 if u'交房时间' == label:
                     build_year_str = li.xpath("./div[@class='des']/text()").extract_first()
                     if build_year_str:
-                        item['build_year'] = StringUtil.get_first_int_from_string(build_year_str)
+                        item['build_year'] = StringUtil.get_first_year_from_string(build_year_str)
                     continue
         self.redis_connection.sadd('crawledUrls', response.meta['homepage_url'])
         # print item # 测试用

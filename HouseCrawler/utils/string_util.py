@@ -30,6 +30,7 @@ class StringUtil(object):
         else:
             return None
 
+    # 从字符传中获取第一个数字
     @classmethod
     def get_first_number_from_string(cls, string):
         if string:
@@ -43,5 +44,18 @@ class StringUtil(object):
                     return num.group()
                 else:
                     return None
+        else:
+            return None
+
+    # 从字符串中获取第一个年份
+    @classmethod
+    def get_first_year_from_string(cls, string):
+        if string:
+            string = re.sub(r'\s', '', string)
+            string = re.search(r'\d\d\d\d', string)
+            if string:
+                return string.group()
+            else:
+                return None
         else:
             return None
