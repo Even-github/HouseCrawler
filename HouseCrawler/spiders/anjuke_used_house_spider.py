@@ -18,6 +18,8 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
     default_delay = 1000
     pool = ConnectionPoolCreater.get_pool()
     redis_connection = redis.Redis(connection_pool=pool)
+    max_required_count = 150 # 由于爬取的数量较多，每一个区域限定爬取数量
+    required_count = 0 # 记录爬取了多少个信息
 
     def __init__(self, city, county, url, *args, **kwargs):
         super(AnjukeUsedHouseSpider, self).__init__(*args, **kwargs)
@@ -42,25 +44,26 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
 
     # 解析二手房列表中的所有url
     def parse_used_house_list(self, response):
-        urls = response.xpath("//ul[@id='houselist-mod-new']/li[@class='list-item']/div[@class='house-details']/div[@class='house-title']/a/@href").extract()
-        if urls:
-            for url in urls:
-                # 已经爬过的url不再爬
-                if self.redis_connection.sismember('crawledUrls', url) is False:
-                    self.count = self.count + 1
-                    # 爬取一定数量的页面后，暂停一段时间
-                    if self.count > 430:
-                        print 'Spider is preparing to sleep...'
-                        time.sleep(self.default_delay)
-                        self.count = 0
-                    yield scrapy.Request(url=url,
-                                         callback=self.parse_used_house_details,
-                                         cookies=self.cookies)
-        next_page = response.xpath("//a[@class='aNxt']/@href").extract_first()
-        if next_page:
-            yield scrapy.Request(url=next_page,
-                                 callback=self.parse_used_house_list,
-                                 cookies=self.cookies)
+        if self.required_count < self.max_required_count:
+            urls = response.xpath("//ul[@id='houselist-mod-new']/li[@class='list-item']/div[@class='house-details']/div[@class='house-title']/a/@href").extract()
+            if urls:
+                for url in urls:
+                    # 已经爬过的url不再爬
+                    if self.redis_connection.sismember('crawledUrls', url) is False:
+                        self.count = self.count + 1
+                        # 爬取一定数量的页面后，暂停一段时间
+                        if self.count > 430:
+                            print 'Spider is preparing to sleep...'
+                            time.sleep(self.default_delay)
+                            self.count = 0
+                        yield scrapy.Request(url=url,
+                                             callback=self.parse_used_house_details,
+                                             cookies=self.cookies)
+            next_page = response.xpath("//a[@class='aNxt']/@href").extract_first()
+            if next_page:
+                yield scrapy.Request(url=next_page,
+                                     callback=self.parse_used_house_list,
+                                     cookies=self.cookies)
 
     # 解析二手房的详细信息
     def parse_used_house_details(self, response):
@@ -114,6 +117,8 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
         print item  # 测试用
         self.redis_connection.sadd('crawledUrls', response.url)
         self.check_and_save(item=item)
+        self.required_count = self.required_count + 1
+        print 'required_count:' + str(self.required_count)
         return item
 
     def check_and_save(self, item):
