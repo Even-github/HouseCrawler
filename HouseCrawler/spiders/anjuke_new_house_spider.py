@@ -18,8 +18,8 @@ class AnjukeNewHouseSpider(scrapy.Spider):
     default_delay = 3
     pool = ConnectionPoolCreater.get_pool()
     redis_connection = redis.Redis(connection_pool=pool)
-    max_required_count = 150 # 由于爬取的数量较多，每一个区域限定爬取数量
-    required_count = 0 # 记录爬取了多少个信息
+    page_count = 1
+    max_page_count = 3 # 只爬取每个区域的前3页信息
 
     def __init__(self, city, county, url, *args, **kwargs):
         super(AnjukeNewHouseSpider, self).__init__(*args, **kwargs)
@@ -44,19 +44,22 @@ class AnjukeNewHouseSpider(scrapy.Spider):
 
     # 解析新房列表中的所有url
     def parse_new_house_list(self, response):
-        if self.required_count < self.max_required_count:
-            urls = response.xpath("//div[@class='key-list']/div[@class='item-mod']/@data-link | //div[@class='key-list']/div[@class='item-mod ']/@data-link")\
-                .extract()
-            if urls:
-                for url in urls:
-                    # 已经爬过的url不再爬
-                    if self.redis_connection.sismember('crawledUrls', url) is False:
-                        yield scrapy.Request(url=url,
-                                             callback=self.parse_new_house_homepage,
-                                             meta={'homepage_url': url})
+        urls = response.xpath("//div[@class='key-list']/div[@class='item-mod']/@data-link | //div[@class='key-list']/div[@class='item-mod ']/@data-link")\
+            .extract()
+        if urls:
+            for url in urls:
+                # 已经爬过的url不再爬
+                if self.redis_connection.sismember('crawledUrls', url) is False:
+                    yield scrapy.Request(url=url,
+                                         callback=self.parse_new_house_homepage,
+                                         meta={'homepage_url': url})
+        # 只抓取前几页数据
+        if self.page_count < self.max_page_count:
             # 下一页
             next_page = response.xpath("//a[@class='next-page next-link']/@href").extract_first()
             if next_page:
+                self.page_count = self.page_count + 1
+                print 'page:' + str(self.page_count) + '/' + str(self.max_page_count)
                 yield scrapy.Request(url=next_page,
                                      callback=self.parse_new_house_list,
                                      cookies=self.cookies)
@@ -139,8 +142,6 @@ class AnjukeNewHouseSpider(scrapy.Spider):
         self.redis_connection.sadd('crawledUrls', response.meta['homepage_url'])
         print item # 测试用
         self.check_and_save(item)
-        self.required_count = self.required_count + 1
-        print 'required_count:' + str(self.required_count)
         return item
 
     def check_and_save(self, item):

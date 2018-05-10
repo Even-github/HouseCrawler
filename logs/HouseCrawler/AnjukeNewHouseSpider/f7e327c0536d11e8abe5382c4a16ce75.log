@@ -1,0 +1,222 @@
+2018-05-09 19:02:50 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: HouseCrawler)
+2018-05-09 19:02:50 [scrapy.utils.log] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 30, 'NEWSPIDER_MODULE': 'HouseCrawler.spiders', 'LOG_FILE': 'logs\\HouseCrawler\\AnjukeNewHouseSpider\\f7e327c0536d11e8abe5382c4a16ce75.log', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'SPIDER_MODULES': ['HouseCrawler.spiders'], 'AUTOTHROTTLE_START_DELAY': 6, 'BOT_NAME': 'HouseCrawler', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 4, 'AUTOTHROTTLE_DEBUG': True}
+2018-05-09 19:02:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-05-09 19:02:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['HouseCrawler.middlewares.AnjukeUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-09 19:02:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-09 19:02:50 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-09 19:02:50 [scrapy.core.engine] INFO: Spider opened
+2018-05-09 19:02:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-09 19:02:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-09 19:02:50 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (-2000) | latency:  449 ms | size: 22479 bytes
+2018-05-09 19:02:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/hailingdao/> (referer: https://gz.fang.anjuke.com/)
+2018-05-09 19:02:56 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  822 ms | size: 33316 bytes
+2018-05-09 19:02:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/424996.html> (referer: https://yj.fang.anjuke.com/loupan/hailingdao/)
+2018-05-09 19:03:01 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  753 ms | size: 36669 bytes
+2018-05-09 19:03:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/402508.html> (referer: https://yj.fang.anjuke.com/loupan/hailingdao/)
+2018-05-09 19:03:06 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  953 ms | size: 33878 bytes
+2018-05-09 19:03:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/425009.html> (referer: https://yj.fang.anjuke.com/loupan/hailingdao/)
+2018-05-09 19:03:09 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  750 ms | size: 34786 bytes
+2018-05-09 19:03:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/402722.html> (referer: https://yj.fang.anjuke.com/loupan/hailingdao/)
+2018-05-09 19:03:15 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  926 ms | size: 36964 bytes
+2018-05-09 19:03:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/424997.html> (referer: https://yj.fang.anjuke.com/loupan/hailingdao/)
+2018-05-09 19:03:20 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  730 ms | size: 35512 bytes
+2018-05-09 19:03:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/401372.html> (referer: https://yj.fang.anjuke.com/loupan/hailingdao/)
+2018-05-09 19:03:26 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  642 ms | size: 35216 bytes
+2018-05-09 19:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/425088.html> (referer: https://yj.fang.anjuke.com/loupan/hailingdao/)
+2018-05-09 19:03:29 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  495 ms | size: 34971 bytes
+2018-05-09 19:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/401920.html> (referer: https://yj.fang.anjuke.com/loupan/hailingdao/)
+2018-05-09 19:03:33 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  429 ms | size: 25503 bytes
+2018-05-09 19:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/canshu-424996.html> (referer: https://yj.fang.anjuke.com/loupan/424996.html)
+2018-05-09 19:03:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yj.fang.anjuke.com/loupan/canshu-424996.html>
+{'build_year': u'2016',
+ 'city': '\xe9\x98\xb3\xe6\xb1\x9f',
+ 'county': '\xe6\xb5\xb7\xe9\x99\xb5\xe5\xb2?',
+ 'crawl_time': 1525863814.056,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u654f\u6377\u5927\u9053\u5357',
+ 'house_name': u'\u654f\u6377\u9ec4\u91d1\u6d77\u5cb8',
+ 'id': '9da11280-5378-11e8-aea1-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': None,
+ 'url': 'https://yj.fang.anjuke.com/loupan/canshu-424996.html'}
+2018-05-09 19:03:40 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency: 1075 ms | size: 23610 bytes
+2018-05-09 19:03:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/canshu-402508.html> (referer: https://yj.fang.anjuke.com/loupan/402508.html)
+2018-05-09 19:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yj.fang.anjuke.com/loupan/canshu-402508.html>
+{'build_year': None,
+ 'city': '\xe9\x98\xb3\xe6\xb1\x9f',
+ 'county': '\xe6\xb5\xb7\xe9\x99\xb5\xe5\xb2?',
+ 'crawl_time': 1525863820.27,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u6d77\u9675\u5c9b\u7ecf\u6d4e\u8bd5\u9a8c\u533a\u95f8\u5761\u65c5\u6e38\u5927\u9053\u5357',
+ 'house_name': u'\u51ef\u9038\u9ec4\u91d1\u6d77\u5cb8',
+ 'id': 'a15540de-5378-11e8-b5b1-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'12000',
+ 'url': 'https://yj.fang.anjuke.com/loupan/canshu-402508.html'}
+2018-05-09 19:03:44 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  415 ms | size: 25008 bytes
+2018-05-09 19:03:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/canshu-425009.html> (referer: https://yj.fang.anjuke.com/loupan/425009.html)
+2018-05-09 19:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yj.fang.anjuke.com/loupan/canshu-425009.html>
+{'build_year': u'2015',
+ 'city': '\xe9\x98\xb3\xe6\xb1\x9f',
+ 'county': '\xe6\xb5\xb7\xe9\x99\xb5\xe5\xb2?',
+ 'crawl_time': 1525863824.6,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u5357\u6d77\u4e00\u53f7\u5927\u9053\u5341\u91cc\u94f6\u6ee9\u4e1c\u4fa7',
+ 'house_name': u'\u6d77\u9675\u5c9b\u6052\u5927\u5fa1\u666f\u6e7e',
+ 'id': 'a3e9f580-5378-11e8-b2cc-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': None,
+ 'url': 'https://yj.fang.anjuke.com/loupan/canshu-425009.html'}
+2018-05-09 19:03:48 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  305 ms | size: 25611 bytes
+2018-05-09 19:03:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/canshu-402722.html> (referer: https://yj.fang.anjuke.com/loupan/402722.html)
+2018-05-09 19:03:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yj.fang.anjuke.com/loupan/canshu-402722.html>
+{'build_year': u'2015',
+ 'city': '\xe9\x98\xb3\xe6\xb1\x9f',
+ 'county': '\xe6\xb5\xb7\xe9\x99\xb5\xe5\xb2?',
+ 'crawl_time': 1525863828.914,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u592a\u5085\u5927\u9053',
+ 'house_name': u'\u654f\u6377\u9ec4\u91d1\u5c9b',
+ 'id': 'a67c3921-5378-11e8-ae47-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': None,
+ 'url': 'https://yj.fang.anjuke.com/loupan/canshu-402722.html'}
+2018-05-09 19:03:50 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 13 pages/min), scraped 4 items (at 4 items/min)
+2018-05-09 19:03:55 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  553 ms | size: 25691 bytes
+2018-05-09 19:03:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/canshu-424997.html> (referer: https://yj.fang.anjuke.com/loupan/424997.html)
+2018-05-09 19:03:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yj.fang.anjuke.com/loupan/canshu-424997.html>
+{'build_year': u'2018',
+ 'city': '\xe9\x98\xb3\xe6\xb1\x9f',
+ 'county': '\xe6\xb5\xb7\xe9\x99\xb5\xe5\xb2?',
+ 'crawl_time': 1525863835.119,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u95f8\u5761\u9547\u6d77\u6ee8\u8def6\u53f7',
+ 'house_name': u'\u5c71\u6d77\u6e7e',
+ 'id': 'aa2f07f0-5378-11e8-b482-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'6000',
+ 'url': 'https://yj.fang.anjuke.com/loupan/canshu-424997.html'}
+2018-05-09 19:04:00 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  322 ms | size: 25792 bytes
+2018-05-09 19:04:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/canshu-401372.html> (referer: https://yj.fang.anjuke.com/loupan/401372.html)
+2018-05-09 19:04:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yj.fang.anjuke.com/loupan/canshu-401372.html>
+{'build_year': u'2018',
+ 'city': '\xe9\x98\xb3\xe6\xb1\x9f',
+ 'county': '\xe6\xb5\xb7\xe9\x99\xb5\xe5\xb2?',
+ 'crawl_time': 1525863840.732,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u5357\u6d77\u4e00\u53f7\u9986\u5341\u91cc\u94f6\u6ee9',
+ 'house_name': u'\u4fdd\u5229\u6d77\u9675\u5c9b',
+ 'id': 'ad8781c0-5378-11e8-9c1d-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': None,
+ 'url': 'https://yj.fang.anjuke.com/loupan/canshu-401372.html'}
+2018-05-09 19:04:06 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  496 ms | size: 25224 bytes
+2018-05-09 19:04:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/canshu-425088.html> (referer: https://yj.fang.anjuke.com/loupan/425088.html)
+2018-05-09 19:04:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yj.fang.anjuke.com/loupan/canshu-425088.html>
+{'build_year': u'2018',
+ 'city': '\xe9\x98\xb3\xe6\xb1\x9f',
+ 'county': '\xe6\xb5\xb7\xe9\x99\xb5\xe5\xb2?',
+ 'crawl_time': 1525863846.598,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u5317\u6d1b\u6e7e\u65c5\u6e38\u666f\u533a',
+ 'house_name': u'\u4fdd\u5229\u987a\u5cf0\u5317\u6d1b\u79d8\u5883',
+ 'id': 'b1069661-5378-11e8-9440-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'2500',
+ 'type': u'new',
+ 'unit_price': u'13000',
+ 'url': 'https://yj.fang.anjuke.com/loupan/canshu-425088.html'}
+2018-05-09 19:04:10 [scrapy.extensions.throttle] INFO: slot: yj.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  325 ms | size: 26459 bytes
+2018-05-09 19:04:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://yj.fang.anjuke.com/loupan/canshu-401920.html> (referer: https://yj.fang.anjuke.com/loupan/401920.html)
+2018-05-09 19:04:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://yj.fang.anjuke.com/loupan/canshu-401920.html>
+{'build_year': u'2015',
+ 'city': '\xe9\x98\xb3\xe6\xb1\x9f',
+ 'county': '\xe6\xb5\xb7\xe9\x99\xb5\xe5\xb2?',
+ 'crawl_time': 1525863850.235,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u5357\u6d77\u4e00\u53f7\u5927\u9053\u5341\u91cc\u94f6\u6ee9\u4e1c\u4fa7',
+ 'house_name': u'\u6052\u5927\u6d77\u4e0a\u590f\u5a01\u5937',
+ 'id': 'b3318cae-5378-11e8-9add-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': None,
+ 'url': 'https://yj.fang.anjuke.com/loupan/canshu-401920.html'}
+2018-05-09 19:04:10 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-09 19:04:10 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 16469,
+ 'downloader/request_count': 17,
+ 'downloader/request_method_count/GET': 17,
+ 'downloader/response_bytes': 519028,
+ 'downloader/response_count': 17,
+ 'downloader/response_status_count/200': 17,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 9, 11, 4, 10, 273000),
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 26,
+ 'log_count/INFO': 25,
+ 'request_depth_max': 2,
+ 'response_received_count': 17,
+ 'scheduler/dequeued': 17,
+ 'scheduler/dequeued/memory': 17,
+ 'scheduler/enqueued': 17,
+ 'scheduler/enqueued/memory': 17,
+ 'start_time': datetime.datetime(2018, 5, 9, 11, 2, 50, 342000)}
+2018-05-09 19:04:10 [scrapy.core.engine] INFO: Spider closed (finished)

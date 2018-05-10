@@ -18,8 +18,8 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
     default_delay = 1000
     pool = ConnectionPoolCreater.get_pool()
     redis_connection = redis.Redis(connection_pool=pool)
-    max_required_count = 150 # 由于爬取的数量较多，每一个区域限定爬取数量
-    required_count = 0 # 记录爬取了多少个信息
+    page_count = 1
+    max_page_count = 2 # 只爬取每个区域的前2页信息
 
     def __init__(self, city, county, url, *args, **kwargs):
         super(AnjukeUsedHouseSpider, self).__init__(*args, **kwargs)
@@ -44,23 +44,26 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
 
     # 解析二手房列表中的所有url
     def parse_used_house_list(self, response):
-        if self.required_count < self.max_required_count:
-            urls = response.xpath("//ul[@id='houselist-mod-new']/li[@class='list-item']/div[@class='house-details']/div[@class='house-title']/a/@href").extract()
-            if urls:
-                for url in urls:
-                    # 已经爬过的url不再爬
-                    if self.redis_connection.sismember('crawledUrls', url) is False:
-                        self.count = self.count + 1
-                        # 爬取一定数量的页面后，暂停一段时间
-                        if self.count > 430:
-                            print 'Spider is preparing to sleep...'
-                            time.sleep(self.default_delay)
-                            self.count = 0
-                        yield scrapy.Request(url=url,
-                                             callback=self.parse_used_house_details,
-                                             cookies=self.cookies)
+        urls = response.xpath("//ul[@id='houselist-mod-new']/li[@class='list-item']/div[@class='house-details']/div[@class='house-title']/a/@href").extract()
+        if urls:
+            for url in urls:
+                # 已经爬过的url不再爬
+                if self.redis_connection.sismember('crawledUrls', url) is False:
+                    self.count = self.count + 1
+                    # 爬取一定数量的页面后，暂停一段时间
+                    if self.count > 430:
+                        print 'Spider is preparing to sleep...'
+                        time.sleep(self.default_delay)
+                        self.count = 0
+                    yield scrapy.Request(url=url,
+                                         callback=self.parse_used_house_details,
+                                         cookies=self.cookies)
+        # 只抓取前几页数据
+        if self.page_count < self.max_page_count:
             next_page = response.xpath("//a[@class='aNxt']/@href").extract_first()
             if next_page:
+                self.page_count = self.page_count + 1
+                print 'page:' + str(self.page_count) + '/' + str(self.max_page_count)
                 yield scrapy.Request(url=next_page,
                                      callback=self.parse_used_house_list,
                                      cookies=self.cookies)
@@ -88,37 +91,51 @@ class AnjukeUsedHouseSpider(scrapy.Spider):
             item['province'] = ProvinceCity.select_province_by_city(item['city'])
         details_info = response.xpath("//div[@class='block-wrap block-nocopy no-bd-top']/div/div")
         if details_info:
-            first_col = details_info.xpath("./div[@class='first-col detail-col']")
-            third_col = details_info.xpath("./div[@class='third-col detail-col']")
+            first_col = details_info.xpath("./div[@class='first-col detail-col']/dl")
+            third_col = details_info.xpath("./div[@class='third-col detail-col']/dl")
             if first_col:
-                house_name = first_col.xpath("./dl[1]/dd/a/text()").extract_first()
-                if house_name:
-                    item['house_name'] = re.sub(r'\s', '', house_name)
-                house_address_str = first_col.xpath("./dl[2]/dd/p/text()").extract()
-                if house_address_str:
-                    house_address = re.sub('\s|－', '', house_address_str[-1])
-                    item['house_address'] = house_address[1:]
-                build_year_str = first_col.xpath("./dl[3]/dd/text()").extract_first()
-                if build_year_str:
-                    item['build_year'] = StringUtil.get_first_int_from_string(build_year_str)
+                for dl in first_col:
+                    first_label = dl.xpath('./dt/text()').extract_first()
+                    if u'所属小区：' == first_label:
+                        house_name = dl.xpath("./dd/a/text()").extract_first()
+                        if house_name:
+                            item['house_name'] = re.sub(r'\s', '', house_name)
+                        continue
+                    if u'所在位置：' == first_label:
+                        house_address_str = dl.xpath("./dd/p/text()").extract()
+                        if house_address_str:
+                            house_address = re.sub('\s|－', '', house_address_str[-1])
+                            item['house_address'] = house_address[1:]
+                        continue
+                    if u'建造年代：' == first_label:
+                         build_year_str = dl.xpath("./dd/text()").extract_first()
+                         if build_year_str:
+                            item['build_year'] = StringUtil.get_first_int_from_string(build_year_str)
             if third_col:
-                unit_price_str = third_col.xpath("./dl[2]/dd/text()").extract_first()
-                if unit_price_str:
-                    item['unit_price'] = StringUtil.get_first_int_from_string(unit_price_str)
-                down_payment_str = third_col.xpath("./dl[3]/dd/text()").extract_first()
-                if down_payment_str:
-                    item['down_payment'] = StringUtil.get_first_number_from_string(down_payment_str)
-                monthly_payment_str = third_col.xpath("./dl[4]/dd/span/text()").extract_first()
-                if monthly_payment_str:
-                    item['monthly_payment'] = StringUtil.get_first_number_from_string(monthly_payment_str)
+                for dl in third_col:
+                    label = dl.xpath('./dt/text()').extract_first()
+                    if u'房屋单价：' == label:
+                        unit_price_str = dl.xpath("./dd/text()").extract_first()
+                        if unit_price_str:
+                            item['unit_price'] = StringUtil.get_first_int_from_string(unit_price_str)
+                        continue
+                    if u'参考首付：' == label:
+                        down_payment_str = dl.xpath("./dd/text()").extract_first()
+                        if down_payment_str:
+                            item['down_payment'] = StringUtil.get_first_number_from_string(down_payment_str)
+                        continue
+                    if u'参考月供：' == label:
+                        monthly_payment_str = dl.xpath("./dd/span/text()").extract_first()
+                        if monthly_payment_str:
+                            item['monthly_payment'] = StringUtil.get_first_number_from_string(monthly_payment_str)
+                        continue
+
         total_price = response.xpath("//div[@class='basic-info clearfix']/span[@class='light info-tag']/em/text()").extract_first()
         if total_price:
             item['total_price'] = re.sub(r'\s', '', total_price)
         print item  # 测试用
         self.redis_connection.sadd('crawledUrls', response.url)
         self.check_and_save(item=item)
-        self.required_count = self.required_count + 1
-        print 'required_count:' + str(self.required_count)
         return item
 
     def check_and_save(self, item):

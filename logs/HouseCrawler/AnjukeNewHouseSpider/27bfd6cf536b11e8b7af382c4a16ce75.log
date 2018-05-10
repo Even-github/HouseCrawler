@@ -1,0 +1,116 @@
+2018-05-09 17:35:52 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: HouseCrawler)
+2018-05-09 17:35:52 [scrapy.utils.log] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 30, 'NEWSPIDER_MODULE': 'HouseCrawler.spiders', 'LOG_FILE': 'logs\\HouseCrawler\\AnjukeNewHouseSpider\\27bfd6cf536b11e8b7af382c4a16ce75.log', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'SPIDER_MODULES': ['HouseCrawler.spiders'], 'AUTOTHROTTLE_START_DELAY': 6, 'BOT_NAME': 'HouseCrawler', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 4, 'AUTOTHROTTLE_DEBUG': True}
+2018-05-09 17:35:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-05-09 17:35:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['HouseCrawler.middlewares.AnjukeUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-09 17:35:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-09 17:35:52 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-09 17:35:52 [scrapy.core.engine] INFO: Spider opened
+2018-05-09 17:35:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-09 17:35:52 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-09 17:35:53 [scrapy.extensions.throttle] INFO: slot: he.fang.anjuke.com | conc: 1 | delay: 4000 ms (-2000) | latency:  871 ms | size: 20947 bytes
+2018-05-09 17:35:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://he.fang.anjuke.com/loupan/hepingxian/> (referer: https://gz.fang.anjuke.com/)
+2018-05-09 17:36:00 [scrapy.extensions.throttle] INFO: slot: he.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  684 ms | size: 32965 bytes
+2018-05-09 17:36:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://he.fang.anjuke.com/loupan/427787.html> (referer: https://he.fang.anjuke.com/loupan/hepingxian/)
+2018-05-09 17:36:05 [scrapy.extensions.throttle] INFO: slot: he.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  868 ms | size: 34282 bytes
+2018-05-09 17:36:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://he.fang.anjuke.com/loupan/402037.html> (referer: https://he.fang.anjuke.com/loupan/hepingxian/)
+2018-05-09 17:36:10 [scrapy.extensions.throttle] INFO: slot: he.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  700 ms | size: 30856 bytes
+2018-05-09 17:36:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://he.fang.anjuke.com/loupan/403704.html> (referer: https://he.fang.anjuke.com/loupan/hepingxian/)
+2018-05-09 17:36:14 [scrapy.extensions.throttle] INFO: slot: he.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  372 ms | size: 25680 bytes
+2018-05-09 17:36:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://he.fang.anjuke.com/loupan/canshu-427787.html> (referer: https://he.fang.anjuke.com/loupan/427787.html)
+2018-05-09 17:36:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://he.fang.anjuke.com/loupan/canshu-427787.html>
+{'build_year': u'2018',
+ 'city': '\xe6\xb2\xb3\xe6\xba\x90',
+ 'county': '\xe5\x92\x8c\xe5\xb9\xb3\xe5\x8e?',
+ 'crawl_time': 1525858575.073,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u9633\u660e\u9547\u5357\u56ed\u8def(\u548c\u5e73\u9ad8\u901f\u51fa\u53e3\u65c1)',
+ 'house_name': u'\u548c\u5e73\u78a7\u6842\u56ed',
+ 'id': '6af3b50f-536c-11e8-9b38-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'5800',
+ 'url': 'https://he.fang.anjuke.com/loupan/canshu-427787.html'}
+2018-05-09 17:36:21 [scrapy.extensions.throttle] INFO: slot: he.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  532 ms | size: 23837 bytes
+2018-05-09 17:36:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://he.fang.anjuke.com/loupan/canshu-402037.html> (referer: https://he.fang.anjuke.com/loupan/402037.html)
+2018-05-09 17:36:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://he.fang.anjuke.com/loupan/canshu-402037.html>
+{'build_year': u'2015',
+ 'city': '\xe6\xb2\xb3\xe6\xba\x90',
+ 'county': '\xe5\x92\x8c\xe5\xb9\xb3\xe5\x8e?',
+ 'crawl_time': 1525858581.202,
+ 'description': None,
+ 'down_payment': u'13.5',
+ 'house_address': u'\u548c\u5e73\u53bf\u548c\u5e73\u53bf\u9633\u660e\u9547\u798f\u548c\u5927\u9053\uff08\u539f\u515a\u6821\uff09',
+ 'house_name': u'\u534e\u57ce\u56fd\u9645',
+ 'id': '6e9aeb1e-536c-11e8-a29a-382c4a16ce75',
+ 'monthly_payment': u'1671.79',
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'45',
+ 'type': u'new',
+ 'unit_price': u'3800',
+ 'url': 'https://he.fang.anjuke.com/loupan/canshu-402037.html'}
+2018-05-09 17:36:26 [scrapy.extensions.throttle] INFO: slot: he.fang.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  467 ms | size: 23676 bytes
+2018-05-09 17:36:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://he.fang.anjuke.com/loupan/canshu-403704.html> (referer: https://he.fang.anjuke.com/loupan/403704.html)
+2018-05-09 17:36:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://he.fang.anjuke.com/loupan/canshu-403704.html>
+{'build_year': None,
+ 'city': '\xe6\xb2\xb3\xe6\xba\x90',
+ 'county': '\xe5\x92\x8c\xe5\xb9\xb3\xe5\x8e?',
+ 'crawl_time': 1525858586.285,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u548c\u5e73\u53bf\u6cb3\u6e90\u5e02\u548c\u5e73\u53bf\u798f\u548c\u4ea7\u4e1a\u8f6c\u79fb\u56ed',
+ 'house_name': u'\u4ebf\u548c\u57ce\u5e02\u5e7f\u573a',
+ 'id': '71a285d1-536c-11e8-89ea-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'2580',
+ 'url': 'https://he.fang.anjuke.com/loupan/canshu-403704.html'}
+2018-05-09 17:36:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-09 17:36:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 6956,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 197395,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 9, 9, 36, 26, 312000),
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 11,
+ 'log_count/INFO': 14,
+ 'request_depth_max': 2,
+ 'response_received_count': 7,
+ 'scheduler/dequeued': 7,
+ 'scheduler/dequeued/memory': 7,
+ 'scheduler/enqueued': 7,
+ 'scheduler/enqueued/memory': 7,
+ 'start_time': datetime.datetime(2018, 5, 9, 9, 35, 52, 842000)}
+2018-05-09 17:36:26 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -59,3 +59,36 @@ class StringUtil(object):
                 return None
         else:
             return None
+
+    # 获取以.com结尾的url中的根目录
+    @classmethod
+    def get_com_url_root(cls, url):
+        if url:
+            url = re.sub(r'.com(\S)*', '.com', url)
+            return url
+        else:
+            return None
+
+    # 获取url中的当前目录名，如https://bj.fang.lianjia.com/loupan/chaoyang/pg3/#chaoyang 中的chaoyang
+    @classmethod
+    def get_url_current_catalog(cls, url):
+        if url:
+            catalog_obj = re.search(r'((\w)*/)$', url)
+            if catalog_obj:
+                return re.sub(r'/', '', catalog_obj.group())
+            else:
+                return None
+        else:
+            return None
+
+    # 获取单位中的是否包含“套”字
+    @classmethod
+    def container_tao(cls, string):
+        if string:
+            tao = re.search(u'套', string)
+            if tao:
+                return True
+            else:
+                return False
+        else:
+            return False

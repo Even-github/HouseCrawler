@@ -1,0 +1,1465 @@
+2018-05-10 01:02:56 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: HouseCrawler)
+2018-05-10 01:02:56 [scrapy.utils.log] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 30, 'NEWSPIDER_MODULE': 'HouseCrawler.spiders', 'LOG_FILE': 'logs\\HouseCrawler\\AnjukeUsedHouseSpider\\1273f30053a811e8bd50382c4a16ce75.log', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'SPIDER_MODULES': ['HouseCrawler.spiders'], 'AUTOTHROTTLE_START_DELAY': 6, 'BOT_NAME': 'HouseCrawler', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 4, 'AUTOTHROTTLE_DEBUG': True}
+2018-05-10 01:02:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-05-10 01:02:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['HouseCrawler.middlewares.AnjukeUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-10 01:02:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-10 01:02:56 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-10 01:02:56 [scrapy.core.engine] INFO: Spider opened
+2018-05-10 01:02:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-10 01:02:56 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-10 01:02:57 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (-2000) | latency:  500 ms | size: 36655 bytes
+2018-05-10 01:02:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/sale/zhangmutou/> (referer: https://gz.fang.anjuke.com/)
+2018-05-10 01:03:04 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  281 ms | size: 33617 bytes
+2018-05-10 01:03:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1209605255?from=filter&spread=filtersearch&position=1&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1209605255?from=filter&spread=filtersearch&position=1&kwtype=filter&now_time=1525885376>
+{'build_year': u'2015',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885384.305,
+ 'description': None,
+ 'down_payment': u'55.50',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u957f\u8679\u767e\u835f',
+ 'id': 'd67fde11-53aa-11e8-819e-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'185',
+ 'type': u'used',
+ 'unit_price': u'14015',
+ 'url': 'https://dg.anjuke.com/prop/view/A1209605255?from=filter&spread=filtersearch&position=1&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:07 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  391 ms | size: 32282 bytes
+2018-05-10 01:03:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1202025506?from=filter&spread=filtersearch&position=14&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1202025506?from=filter&spread=filtersearch&position=14&kwtype=filter&now_time=1525885376>
+{'build_year': u'2015',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885387.68,
+ 'description': None,
+ 'down_payment': u'45.30',
+ 'house_address': u'\u5b9d\u5c71\u8def',
+ 'house_name': u'\u7eff\u8335\u6e29\u838e\u5821',
+ 'id': 'd882da00-53aa-11e8-bc6e-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'151',
+ 'type': u'used',
+ 'unit_price': u'17558',
+ 'url': 'https://dg.anjuke.com/prop/view/A1202025506?from=filter&spread=filtersearch&position=14&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:13 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  281 ms | size: 32816 bytes
+2018-05-10 01:03:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1219748807?from=filter&spread=filtersearch&position=13&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1219748807?from=filter&spread=filtersearch&position=13&kwtype=filter&now_time=1525885376>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885393.914,
+ 'description': None,
+ 'down_payment': u'19.20',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u957f\u8679\u767e\u835f',
+ 'id': 'dc3a15a1-53aa-11e8-be5a-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'64',
+ 'type': u'used',
+ 'unit_price': u'12075',
+ 'url': 'https://dg.anjuke.com/prop/view/A1219748807?from=filter&spread=filtersearch&position=13&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:18 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  312 ms | size: 32028 bytes
+2018-05-10 01:03:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1214498063?from=filter&spread=filtersearch&position=12&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1214498063?from=filter&spread=filtersearch&position=12&kwtype=filter&now_time=1525885376>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885398.57,
+ 'description': None,
+ 'down_payment': u'21.00',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u957f\u8679\u767e\u835f',
+ 'id': 'df00889e-53aa-11e8-938f-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'70',
+ 'type': u'used',
+ 'unit_price': u'13207',
+ 'url': 'https://dg.anjuke.com/prop/view/A1214498063?from=filter&spread=filtersearch&position=12&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:21 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  389 ms | size: 31372 bytes
+2018-05-10 01:03:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1219563555?from=filter&spread=filtersearch&position=11&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1219563555?from=filter&spread=filtersearch&position=11&kwtype=filter&now_time=1525885376>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885402.086,
+ 'description': None,
+ 'down_payment': u'18.90',
+ 'house_address': u'\u6a1f\u6728\u5934\u5927\u9053',
+ 'house_name': u'\u60a0\u7136\u5c71\u5e84',
+ 'id': 'e119085e-53aa-11e8-a435-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'63',
+ 'type': u'used',
+ 'unit_price': u'7572',
+ 'url': 'https://dg.anjuke.com/prop/view/A1219563555?from=filter&spread=filtersearch&position=11&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:25 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 33489 bytes
+2018-05-10 01:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1218229260?from=filter&spread=filtersearch&position=10&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1218229260?from=filter&spread=filtersearch&position=10&kwtype=filter&now_time=1525885376>
+{'build_year': u'2008',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885406.024,
+ 'description': None,
+ 'down_payment': u'50.40',
+ 'house_address': u'\u4e1c\u57ce\u8def',
+ 'house_name': u'\u4e2d\u60e0\u9999\u6a1f\u7eff\u6d32',
+ 'id': 'e371ec80-53aa-11e8-87b0-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'168',
+ 'type': u'used',
+ 'unit_price': u'16470',
+ 'url': 'https://dg.anjuke.com/prop/view/A1218229260?from=filter&spread=filtersearch&position=10&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:30 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  235 ms | size: 31760 bytes
+2018-05-10 01:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1214780551?from=filter&spread=filtersearch&position=9&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1214780551?from=filter&spread=filtersearch&position=9&kwtype=filter&now_time=1525885376>
+{'build_year': u'2005',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885410.852,
+ 'description': None,
+ 'down_payment': u'48.00',
+ 'house_address': u'\u6cbf\u6cb3\u8857',
+ 'house_name': u'\u78a7\u6cb3\u82b1\u56ed',
+ 'id': 'e6529e40-53aa-11e8-b5c4-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'160',
+ 'type': u'used',
+ 'unit_price': u'12030',
+ 'url': 'https://dg.anjuke.com/prop/view/A1214780551?from=filter&spread=filtersearch&position=9&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:36 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  343 ms | size: 33251 bytes
+2018-05-10 01:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1205463428?from=filter&spread=filtersearch&position=8&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1205463428?from=filter&spread=filtersearch&position=8&kwtype=filter&now_time=1525885376>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885416.18,
+ 'description': None,
+ 'down_payment': u'51.90',
+ 'house_address': u'\u6a1f\u6df1\u8def',
+ 'house_name': u'\u4e30\u6cf0\u6a61\u6811\u6eaa\u8c37',
+ 'id': 'e97f9b40-53aa-11e8-a801-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'173',
+ 'type': u'used',
+ 'unit_price': u'16476',
+ 'url': 'https://dg.anjuke.com/prop/view/A1205463428?from=filter&spread=filtersearch&position=8&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:40 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 33323 bytes
+2018-05-10 01:03:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1219271717?from=filter&spread=filtersearch&position=7&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1219271717?from=filter&spread=filtersearch&position=7&kwtype=filter&now_time=1525885376>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885420.274,
+ 'description': None,
+ 'down_payment': u'49.50',
+ 'house_address': u'\u7b14\u67b6\u5c71\u8def100\u53f7',
+ 'house_name': u'\u9890\u666f\u6e7e\u7554(\u534e\u7fe0\u82b1\u56ed)',
+ 'id': 'ebf04d1e-53aa-11e8-a496-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'165',
+ 'type': u'used',
+ 'unit_price': u'16336',
+ 'url': 'https://dg.anjuke.com/prop/view/A1219271717?from=filter&spread=filtersearch&position=7&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:45 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  328 ms | size: 33564 bytes
+2018-05-10 01:03:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1203914042?from=filter&spread=filtersearch&position=6&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1203914042?from=filter&spread=filtersearch&position=6&kwtype=filter&now_time=1525885376>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885425.93,
+ 'description': None,
+ 'down_payment': u'47.40',
+ 'house_address': u'\u7b14\u67b6\u5c71\u8def100\u53f7',
+ 'house_name': u'\u9890\u666f\u6e7e\u7554(\u534e\u7fe0\u82b1\u56ed)',
+ 'id': 'ef4f56a1-53aa-11e8-a44a-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'158',
+ 'type': u'used',
+ 'unit_price': u'15643',
+ 'url': 'https://dg.anjuke.com/prop/view/A1203914042?from=filter&spread=filtersearch&position=6&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:50 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 32996 bytes
+2018-05-10 01:03:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1219279048?from=filter&spread=filtersearch&position=5&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1219279048?from=filter&spread=filtersearch&position=5&kwtype=filter&now_time=1525885376>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885431.071,
+ 'description': None,
+ 'down_payment': u'54.00',
+ 'house_address': u'\u6a1f\u6df1\u8def',
+ 'house_name': u'\u4e30\u6cf0\u6a61\u6811\u6eaa\u8c37',
+ 'id': 'f25fcaf0-53aa-11e8-8e5c-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'180',
+ 'type': u'used',
+ 'unit_price': u'15652',
+ 'url': 'https://dg.anjuke.com/prop/view/A1219279048?from=filter&spread=filtersearch&position=5&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:03:56 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 12 pages/min), scraped 11 items (at 11 items/min)
+2018-05-10 01:03:56 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  296 ms | size: 32942 bytes
+2018-05-10 01:03:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1205470629?from=filter&spread=filtersearch&position=4&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:03:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1205470629?from=filter&spread=filtersearch&position=4&kwtype=filter&now_time=1525885376>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885436.915,
+ 'description': None,
+ 'down_payment': u'47.40',
+ 'house_address': u'\u7b14\u67b6\u5c71\u8def100\u53f7',
+ 'house_name': u'\u9890\u666f\u6e7e\u7554(\u534e\u7fe0\u82b1\u56ed)',
+ 'id': 'f5db8430-53aa-11e8-b28b-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'158',
+ 'type': u'used',
+ 'unit_price': u'15800',
+ 'url': 'https://dg.anjuke.com/prop/view/A1205470629?from=filter&spread=filtersearch&position=4&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:02 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  235 ms | size: 30718 bytes
+2018-05-10 01:04:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1218005438?from=filter&spread=filtersearch&position=3&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1218005438?from=filter&spread=filtersearch&position=3&kwtype=filter&now_time=1525885376>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885442.29,
+ 'description': None,
+ 'down_payment': u'84.90',
+ 'house_address': u'\u5b9d\u5c71\u8def',
+ 'house_name': u'\u9526\u591a\u5b9d\u5409\u7965\u9f99',
+ 'id': 'f90fad1e-53aa-11e8-9e85-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'283',
+ 'type': u'used',
+ 'unit_price': u'21769',
+ 'url': 'https://dg.anjuke.com/prop/view/A1218005438?from=filter&spread=filtersearch&position=3&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:08 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 34197 bytes
+2018-05-10 01:04:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1220947465?from=filter&spread=filtersearch&position=2&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1220947465?from=filter&spread=filtersearch&position=2&kwtype=filter&now_time=1525885376>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885448.149,
+ 'description': None,
+ 'down_payment': u'47.40',
+ 'house_address': u'\u7b14\u67b6\u5c71\u8def100\u53f7',
+ 'house_name': u'\u9890\u666f\u6e7e\u7554(\u534e\u7fe0\u82b1\u56ed)',
+ 'id': 'fc8db04f-53aa-11e8-9871-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'158',
+ 'type': u'used',
+ 'unit_price': u'15643',
+ 'url': 'https://dg.anjuke.com/prop/view/A1220947465?from=filter&spread=filtersearch&position=2&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:13 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  312 ms | size: 32879 bytes
+2018-05-10 01:04:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1219973672?from=filter&spread=filtersearch&position=30&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1219973672?from=filter&spread=filtersearch&position=30&kwtype=filter&now_time=1525885376>
+{'build_year': u'2000',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885453.649,
+ 'description': None,
+ 'down_payment': u'33.00',
+ 'house_address': u'\u5e1d\u8c6a\u8def',
+ 'house_name': u'\u5e1d\u96cd\u56ed',
+ 'id': 'ffd4ec0f-53aa-11e8-9fbe-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'110',
+ 'type': u'used',
+ 'unit_price': u'14666',
+ 'url': 'https://dg.anjuke.com/prop/view/A1219973672?from=filter&spread=filtersearch&position=30&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:19 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 32315 bytes
+2018-05-10 01:04:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1219638491?from=filter&spread=filtersearch&position=29&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1219638491?from=filter&spread=filtersearch&position=29&kwtype=filter&now_time=1525885376>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885459.196,
+ 'description': None,
+ 'down_payment': u'36.60',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u957f\u8679\u767e\u835f\u82b1\u56ed',
+ 'id': '032353c0-53ab-11e8-afff-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'122',
+ 'type': u'used',
+ 'unit_price': u'12708',
+ 'url': 'https://dg.anjuke.com/prop/view/A1219638491?from=filter&spread=filtersearch&position=29&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:24 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  282 ms | size: 36985 bytes
+2018-05-10 01:04:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/sale/zhangmutou/p2/#filtersort> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:29 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 29452 bytes
+2018-05-10 01:04:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1211993837?from=filter&spread=filtersearch_t&position=60&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1211993837?from=filter&spread=filtersearch_t&position=60&kwtype=filter&now_time=1525885376>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885469.759,
+ 'description': None,
+ 'down_payment': u'14.70',
+ 'house_address': u'\u839e\u6a1f\u897f\u8def60\u53f7',
+ 'house_name': u'\u5357\u65b9\u5546\u4e1a\u5927\u53a6',
+ 'id': '096f1cf0-53ab-11e8-9150-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'49',
+ 'type': u'used',
+ 'unit_price': u'10652',
+ 'url': 'https://dg.anjuke.com/prop/view/A1211993837?from=filter&spread=filtersearch_t&position=60&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:34 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  422 ms | size: 32375 bytes
+2018-05-10 01:04:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1211826778?from=filter&spread=filtersearch_t&position=59&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1211826778?from=filter&spread=filtersearch_t&position=59&kwtype=filter&now_time=1525885376>
+{'build_year': u'1996',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885474.603,
+ 'description': None,
+ 'down_payment': u'22.50',
+ 'house_address': u'\u839e\u6a1f\u897f\u8def',
+ 'house_name': u'\u7231\u90fd\u82b1\u56ed',
+ 'id': '0c523fae-53ab-11e8-81ce-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'75',
+ 'type': u'used',
+ 'unit_price': u'9615',
+ 'url': 'https://dg.anjuke.com/prop/view/A1211826778?from=filter&spread=filtersearch_t&position=59&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:40 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  296 ms | size: 32204 bytes
+2018-05-10 01:04:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1218794355?from=filter&spread=filtersearch_t&position=58&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1218794355?from=filter&spread=filtersearch_t&position=58&kwtype=filter&now_time=1525885376>
+{'build_year': u'2008',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885480.181,
+ 'description': None,
+ 'down_payment': u'24.00',
+ 'house_address': u'\u4e1c\u57ce\u5927\u90532\u53f7',
+ 'house_name': u'\u5fa1\u666f\u82b1\u56ed',
+ 'id': '0fa5624f-53ab-11e8-b09e-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'80',
+ 'type': u'used',
+ 'unit_price': u'10958',
+ 'url': 'https://dg.anjuke.com/prop/view/A1218794355?from=filter&spread=filtersearch_t&position=58&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:43 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  297 ms | size: 33940 bytes
+2018-05-10 01:04:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1216982168?from=filter&spread=filtersearch_t&position=57&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1216982168?from=filter&spread=filtersearch_t&position=57&kwtype=filter&now_time=1525885376>
+{'build_year': u'2008',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885483.931,
+ 'description': None,
+ 'down_payment': u'28.50',
+ 'house_address': u'\u4e1c\u57ce\u5927\u90532\u53f7',
+ 'house_name': u'\u5fa1\u666f\u82b1\u56ed',
+ 'id': '11e196b0-53ab-11e8-bc51-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'95',
+ 'type': u'used',
+ 'unit_price': u'11046',
+ 'url': 'https://dg.anjuke.com/prop/view/A1216982168?from=filter&spread=filtersearch_t&position=57&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:47 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  233 ms | size: 32104 bytes
+2018-05-10 01:04:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1214870042?from=filter&spread=filtersearch&position=56&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1214870042?from=filter&spread=filtersearch&position=56&kwtype=filter&now_time=1525885376>
+{'build_year': u'2014',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885487.353,
+ 'description': None,
+ 'down_payment': u'20.40',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u957f\u8679\u767e\u835f',
+ 'id': '13ebbe8f-53ab-11e8-a25c-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'68',
+ 'type': u'used',
+ 'unit_price': u'12363',
+ 'url': 'https://dg.anjuke.com/prop/view/A1214870042?from=filter&spread=filtersearch&position=56&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:53 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  234 ms | size: 32497 bytes
+2018-05-10 01:04:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1214892226?from=filter&spread=filtersearch&position=55&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1214892226?from=filter&spread=filtersearch&position=55&kwtype=filter&now_time=1525885376>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885493.322,
+ 'description': None,
+ 'down_payment': u'18.90',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u957f\u8679\u767e\u835f',
+ 'id': '177a8aa1-53ab-11e8-8e19-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'63',
+ 'type': u'used',
+ 'unit_price': u'11886',
+ 'url': 'https://dg.anjuke.com/prop/view/A1214892226?from=filter&spread=filtersearch&position=55&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:04:56 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 12 pages/min), scraped 22 items (at 11 items/min)
+2018-05-10 01:04:58 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 32746 bytes
+2018-05-10 01:04:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1216833203?from=filter&spread=filtersearch&position=54&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:04:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1216833203?from=filter&spread=filtersearch&position=54&kwtype=filter&now_time=1525885376>
+{'build_year': u'2004',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885498.244,
+ 'description': None,
+ 'down_payment': u'33.00',
+ 'house_address': u'\u4e1c\u57ce\u5927\u90532\u53f7',
+ 'house_name': u'\u5fa1\u666f\u82b1\u56ed',
+ 'id': '1a699440-53ab-11e8-be51-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'110',
+ 'type': u'used',
+ 'unit_price': u'15277',
+ 'url': 'https://dg.anjuke.com/prop/view/A1216833203?from=filter&spread=filtersearch&position=54&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:03 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  296 ms | size: 33421 bytes
+2018-05-10 01:05:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1207691672?from=filter&spread=filtersearch&position=53&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1207691672?from=filter&spread=filtersearch&position=53&kwtype=filter&now_time=1525885376>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885503.713,
+ 'description': None,
+ 'down_payment': u'45.00',
+ 'house_address': u'\u4e1c\u839e\u839e\u6df1\u9ad8\u901f\u7530\u5fc3\u51fa\u53e3\u5b9d\u5c71\u68ee\u6797\u516c\u56ed',
+ 'house_name': u'\u4fdd\u5229\u751f\u6001\u57ce',
+ 'id': '1dac150f-53ab-11e8-8be9-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'150',
+ 'type': u'used',
+ 'unit_price': u'18292',
+ 'url': 'https://dg.anjuke.com/prop/view/A1207691672?from=filter&spread=filtersearch&position=53&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:08 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 32195 bytes
+2018-05-10 01:05:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1210324072?from=filter&spread=filtersearch&position=52&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1210324072?from=filter&spread=filtersearch&position=52&kwtype=filter&now_time=1525885376>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885508.306,
+ 'description': None,
+ 'down_payment': u'48.30',
+ 'house_address': u'\u7b14\u67b6\u5c71\u8def100\u53f7',
+ 'house_name': u'\u9890\u666f\u6e7e\u7554(\u534e\u7fe0\u82b1\u56ed)',
+ 'id': '2068eb1e-53ab-11e8-86ca-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'161',
+ 'type': u'used',
+ 'unit_price': u'15940',
+ 'url': 'https://dg.anjuke.com/prop/view/A1210324072?from=filter&spread=filtersearch&position=52&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:12 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 32566 bytes
+2018-05-10 01:05:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1209678673?from=filter&spread=filtersearch&position=51&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1209678673?from=filter&spread=filtersearch&position=51&kwtype=filter&now_time=1525885376>
+{'build_year': u'2010',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885512.853,
+ 'description': None,
+ 'down_payment': u'25.50',
+ 'house_address': u'\u8354\u666f\u5927\u9053',
+ 'house_name': u'\u8354\u666f\u5c71\u5e84',
+ 'id': '231ebc4f-53ab-11e8-a747-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'85',
+ 'type': u'used',
+ 'unit_price': u'9340',
+ 'url': 'https://dg.anjuke.com/prop/view/A1209678673?from=filter&spread=filtersearch&position=51&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:18 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  234 ms | size: 31857 bytes
+2018-05-10 01:05:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1212631931?from=filter&spread=filtersearch&position=50&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1212631931?from=filter&spread=filtersearch&position=50&kwtype=filter&now_time=1525885376>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885518.4,
+ 'description': None,
+ 'down_payment': u'76.80',
+ 'house_address': u'\u5b9d\u5c71\u8def',
+ 'house_name': u'\u7eff\u8335\u6e29\u838e\u5821',
+ 'id': '266d2400-53ab-11e8-88fc-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'256',
+ 'type': u'used',
+ 'unit_price': u'20480',
+ 'url': 'https://dg.anjuke.com/prop/view/A1212631931?from=filter&spread=filtersearch&position=50&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:23 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 33655 bytes
+2018-05-10 01:05:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1210689320?from=filter&spread=filtersearch&position=49&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1210689320?from=filter&spread=filtersearch&position=49&kwtype=filter&now_time=1525885376>
+{'build_year': u'2008',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885524.072,
+ 'description': None,
+ 'down_payment': u'22.50',
+ 'house_address': u'\u4e1c\u57ce\u5927\u90532\u53f7',
+ 'house_name': u'\u5fa1\u666f\u82b1\u56ed',
+ 'id': '29ce9e80-53ab-11e8-8a5e-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'75',
+ 'type': u'used',
+ 'unit_price': u'10135',
+ 'url': 'https://dg.anjuke.com/prop/view/A1210689320?from=filter&spread=filtersearch&position=49&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:28 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  264 ms | size: 32330 bytes
+2018-05-10 01:05:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1210707823?from=filter&spread=filtersearch&position=48&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1210707823?from=filter&spread=filtersearch&position=48&kwtype=filter&now_time=1525885376>
+{'build_year': u'2007',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885529.025,
+ 'description': None,
+ 'down_payment': u'19.50',
+ 'house_address': u'\u4e1c\u57ce\u5927\u90532\u53f7',
+ 'house_name': u'\u5fa1\u666f\u82b1\u56ed',
+ 'id': '2cc26311-53ab-11e8-b4e5-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'65',
+ 'type': u'used',
+ 'unit_price': u'10000',
+ 'url': 'https://dg.anjuke.com/prop/view/A1210707823?from=filter&spread=filtersearch&position=48&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:34 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  297 ms | size: 32348 bytes
+2018-05-10 01:05:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1218503214?from=filter&spread=filtersearch&position=47&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1218503214?from=filter&spread=filtersearch&position=47&kwtype=filter&now_time=1525885376>
+{'build_year': u'1998',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885534.494,
+ 'description': None,
+ 'down_payment': u'26.40',
+ 'house_address': u'\u6c38\u9f99\u8857',
+ 'house_name': u'\u9f99\u90fd\u82b1\u56ed',
+ 'id': '3004e3de-53ab-11e8-b190-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'88',
+ 'type': u'used',
+ 'unit_price': u'9263',
+ 'url': 'https://dg.anjuke.com/prop/view/A1218503214?from=filter&spread=filtersearch&position=47&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:39 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 34354 bytes
+2018-05-10 01:05:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1200816826?from=filter&spread=filtersearch&position=46&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1200816826?from=filter&spread=filtersearch&position=46&kwtype=filter&now_time=1525885376>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885539.276,
+ 'description': None,
+ 'down_payment': u'43.50',
+ 'house_address': u'\u6a1f\u6df1\u8def',
+ 'house_name': u'\u4e30\u6cf0\u6a61\u6811\u6eaa\u8c37',
+ 'id': '32de90c0-53ab-11e8-9385-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'145',
+ 'type': u'used',
+ 'unit_price': u'13809',
+ 'url': 'https://dg.anjuke.com/prop/view/A1200816826?from=filter&spread=filtersearch&position=46&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:44 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  344 ms | size: 33710 bytes
+2018-05-10 01:05:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1211144963?from=filter&spread=filtersearch&position=45&kwtype=filter&now_time=1525885376> (referer: https://dg.anjuke.com/sale/zhangmutou/)
+2018-05-10 01:05:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1211144963?from=filter&spread=filtersearch&position=45&kwtype=filter&now_time=1525885376>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885544.807,
+ 'description': None,
+ 'down_payment': u'34.50',
+ 'house_address': u'\u839e\u6a1f\u897f\u8def',
+ 'house_name': u'\u5e1d\u666f\u82b1\u56ed',
+ 'id': '362a876e-53ab-11e8-b3d7-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'115',
+ 'type': u'used',
+ 'unit_price': u'8846',
+ 'url': 'https://dg.anjuke.com/prop/view/A1211144963?from=filter&spread=filtersearch&position=45&kwtype=filter&now_time=1525885376'}
+2018-05-10 01:05:48 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  281 ms | size: 32932 bytes
+2018-05-10 01:05:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1124272573?from=filter&spread=commsearch_p&position=120&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:05:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1124272573?from=filter&spread=commsearch_p&position=120&kwtype=filter&now_time=1525885464>
+{'build_year': u'2010',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885549.026,
+ 'description': None,
+ 'down_payment': u'14.70',
+ 'house_address': u'\u6a1f\u6728\u5934\u4e1c\u839e\u5e02\u77f3\u9a6c\u9547',
+ 'house_name': u'\u65b0\u57ce\u5e02\u5e7f\u573a',
+ 'id': '38ae4c21-53ab-11e8-a850-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'49',
+ 'type': u'used',
+ 'unit_price': u'5444',
+ 'url': 'https://dg.anjuke.com/prop/view/A1124272573?from=filter&spread=commsearch_p&position=120&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:05:53 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  234 ms | size: 31812 bytes
+2018-05-10 01:05:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1214870042?from=filter&spread=commsearch_t&position=119&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:05:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1214870042?from=filter&spread=commsearch_t&position=119&kwtype=filter&now_time=1525885464>
+{'build_year': u'2014',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885553.26,
+ 'description': None,
+ 'down_payment': u'20.40',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u957f\u8679\u767e\u835f',
+ 'id': '3b345ac0-53ab-11e8-aa52-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'68',
+ 'type': u'used',
+ 'unit_price': u'12363',
+ 'url': 'https://dg.anjuke.com/prop/view/A1214870042?from=filter&spread=commsearch_t&position=119&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:05:56 [scrapy.extensions.logstats] INFO: Crawled 36 pages (at 12 pages/min), scraped 34 items (at 12 items/min)
+2018-05-10 01:05:58 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 31961 bytes
+2018-05-10 01:05:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1219406699?from=filter&spread=commsearch_t&position=118&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:05:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1219406699?from=filter&spread=commsearch_t&position=118&kwtype=filter&now_time=1525885464>
+{'build_year': u'2010',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885558.776,
+ 'description': None,
+ 'down_payment': u'46.50',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u9999\u6a1f1\u53f7',
+ 'id': '3e7e0780-53ab-11e8-af95-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'155',
+ 'type': u'used',
+ 'unit_price': u'15656',
+ 'url': 'https://dg.anjuke.com/prop/view/A1219406699?from=filter&spread=commsearch_t&position=118&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:03 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  265 ms | size: 32540 bytes
+2018-05-10 01:06:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1211508786?from=filter&spread=commsearch_t&position=117&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1211508786?from=filter&spread=commsearch_t&position=117&kwtype=filter&now_time=1525885464>
+{'build_year': u'2015',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885563.807,
+ 'description': None,
+ 'down_payment': u'45.90',
+ 'house_address': u'\u7b14\u67b6\u5c71\u8def100\u53f7',
+ 'house_name': u'\u9890\u666f\u6e7e\u7554(\u534e\u7fe0\u82b1\u56ed)',
+ 'id': '417db2ee-53ab-11e8-8024-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'153',
+ 'type': u'used',
+ 'unit_price': u'13421',
+ 'url': 'https://dg.anjuke.com/prop/view/A1211508786?from=filter&spread=commsearch_t&position=117&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:07 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  280 ms | size: 34034 bytes
+2018-05-10 01:06:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1220077618?from=filter&spread=commsearch_t&position=116&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1220077618?from=filter&spread=commsearch_t&position=116&kwtype=filter&now_time=1525885464>
+{'build_year': u'2014',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885568.057,
+ 'description': None,
+ 'down_payment': u'70.50',
+ 'house_address': u'\u5b9d\u5c71\u8def',
+ 'house_name': u'\u7eff\u8335\u6e29\u838e\u5821',
+ 'id': '4406328f-53ab-11e8-911d-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'235',
+ 'type': u'used',
+ 'unit_price': u'16785',
+ 'url': 'https://dg.anjuke.com/prop/view/A1220077618?from=filter&spread=commsearch_t&position=116&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:13 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  312 ms | size: 32978 bytes
+2018-05-10 01:06:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1220326525?from=filter&spread=commsearch_t&position=115&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1220326525?from=filter&spread=commsearch_t&position=115&kwtype=filter&now_time=1525885464>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885573.26,
+ 'description': None,
+ 'down_payment': u'65.40',
+ 'house_address': u'\u4e1c\u839e\u5e02\u94f6\u6cb3\u4e2d\u8def121\u53f7',
+ 'house_name': u'\u5bcc\u76c8\u5c71\u6c34\u534e\u5e9c',
+ 'id': '47201cc0-53ab-11e8-96ea-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'218',
+ 'type': u'used',
+ 'unit_price': u'13625',
+ 'url': 'https://dg.anjuke.com/prop/view/A1220326525?from=filter&spread=commsearch_t&position=115&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:18 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 32262 bytes
+2018-05-10 01:06:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1218795671?from=filter&spread=commsearch_t&position=114&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1218795671?from=filter&spread=commsearch_t&position=114&kwtype=filter&now_time=1525885464>
+{'build_year': u'2000',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885578.604,
+ 'description': None,
+ 'down_payment': u'30.90',
+ 'house_address': u'\u4e1c\u57ce\u5927\u90532\u53f7',
+ 'house_name': u'\u5fa1\u666f\u82b1\u56ed',
+ 'id': '4a4f8ac0-53ab-11e8-815a-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'103',
+ 'type': u'used',
+ 'unit_price': u'9626',
+ 'url': 'https://dg.anjuke.com/prop/view/A1218795671?from=filter&spread=commsearch_t&position=114&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:22 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  234 ms | size: 33253 bytes
+2018-05-10 01:06:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1214701801?from=filter&spread=commsearch_t&position=113&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1214701801?from=filter&spread=commsearch_t&position=113&kwtype=filter&now_time=1525885464>
+{'build_year': u'2005',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885582.87,
+ 'description': None,
+ 'down_payment': u'24.00',
+ 'house_address': u'\u839e\u6a1f\u897f\u8def',
+ 'house_name': u'\u5e1d\u8c6a\u82b1\u56ed',
+ 'id': '4cda7b5e-53ab-11e8-b97e-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'80',
+ 'type': u'used',
+ 'unit_price': u'9195',
+ 'url': 'https://dg.anjuke.com/prop/view/A1214701801?from=filter&spread=commsearch_t&position=113&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:27 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  234 ms | size: 29430 bytes
+2018-05-10 01:06:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1215445860?from=filter&spread=commsearch_t&position=112&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1215445860?from=filter&spread=commsearch_t&position=112&kwtype=filter&now_time=1525885464>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885587.557,
+ 'description': None,
+ 'down_payment': u'20.40',
+ 'house_address': u'\u839e\u6a1f\u897f\u8def90\u53f7',
+ 'house_name': u'\u666f\u90fd\u5927\u53a6',
+ 'id': '4fa5a94f-53ab-11e8-94fa-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'68',
+ 'type': u'used',
+ 'unit_price': u'5666',
+ 'url': 'https://dg.anjuke.com/prop/view/A1215445860?from=filter&spread=commsearch_t&position=112&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:33 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  328 ms | size: 32151 bytes
+2018-05-10 01:06:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1216379394?from=filter&spread=commsearch_t&position=111&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1216379394?from=filter&spread=commsearch_t&position=111&kwtype=filter&now_time=1525885464>
+{'build_year': u'2010',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885593.214,
+ 'description': None,
+ 'down_payment': u'30.00',
+ 'house_address': u'\u4e1c\u57ce\u5927\u90532\u53f7',
+ 'house_name': u'\u5fa1\u666f\u82b1\u56ed',
+ 'id': '5304d9de-53ab-11e8-8ac8-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'100',
+ 'type': u'used',
+ 'unit_price': u'10416',
+ 'url': 'https://dg.anjuke.com/prop/view/A1216379394?from=filter&spread=commsearch_t&position=111&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:37 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  375 ms | size: 33610 bytes
+2018-05-10 01:06:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1196619363?from=filter&spread=commsearch_p&position=110&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1196619363?from=filter&spread=commsearch_p&position=110&kwtype=filter&now_time=1525885464>
+{'build_year': u'2009',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885597.948,
+ 'description': None,
+ 'down_payment': u'11.40',
+ 'house_address': u'\u839e\u6a1f\u897f\u8def',
+ 'house_name': u'\u7ef4\u591a\u5229\u82b1\u56ed',
+ 'id': '55d733c0-53ab-11e8-8f6e-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'38',
+ 'type': u'used',
+ 'unit_price': u'9047',
+ 'url': 'https://dg.anjuke.com/prop/view/A1196619363?from=filter&spread=commsearch_p&position=110&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:43 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  312 ms | size: 31511 bytes
+2018-05-10 01:06:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1186169172?from=filter&spread=commsearch_p&position=109&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1186169172?from=filter&spread=commsearch_p&position=109&kwtype=filter&now_time=1525885464>
+{'build_year': u'1999',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885603.401,
+ 'description': None,
+ 'down_payment': u'23.40',
+ 'house_address': u'\u8fc8\u8c6a\u8857',
+ 'house_name': u'\u542f\u8f89\u82b1\u56edA\u680b',
+ 'id': '5917438f-53ab-11e8-9718-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'78',
+ 'type': u'used',
+ 'unit_price': u'9397',
+ 'url': 'https://dg.anjuke.com/prop/view/A1186169172?from=filter&spread=commsearch_p&position=109&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:47 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  296 ms | size: 33909 bytes
+2018-05-10 01:06:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1168114022?from=filter&spread=commsearch_p&position=108&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1168114022?from=filter&spread=commsearch_p&position=108&kwtype=filter&now_time=1525885464>
+{'build_year': u'2013',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885608.073,
+ 'description': None,
+ 'down_payment': u'47.40',
+ 'house_address': u'\u5b9d\u5c71\u8def',
+ 'house_name': u'\u7eff\u8335\u6e29\u838e\u5821',
+ 'id': '5be0278f-53ab-11e8-908c-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'158',
+ 'type': u'used',
+ 'unit_price': u'19398',
+ 'url': 'https://dg.anjuke.com/prop/view/A1168114022?from=filter&spread=commsearch_p&position=108&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:52 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  264 ms | size: 33694 bytes
+2018-05-10 01:06:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1180438397?from=filter&spread=commsearch_p&position=107&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1180438397?from=filter&spread=commsearch_p&position=107&kwtype=filter&now_time=1525885464>
+{'build_year': u'2009',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885612.386,
+ 'description': None,
+ 'down_payment': u'53.40',
+ 'house_address': u'\u4e1c\u57ce\u8def',
+ 'house_name': u'\u4e2d\u60e0\u9999\u6a1f\u7eff\u6d32',
+ 'id': '5e72441e-53ab-11e8-9dda-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'178',
+ 'type': u'used',
+ 'unit_price': u'17450',
+ 'url': 'https://dg.anjuke.com/prop/view/A1180438397?from=filter&spread=commsearch_p&position=107&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:06:56 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 12 pages/min), scraped 46 items (at 12 items/min)
+2018-05-10 01:06:57 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  344 ms | size: 33348 bytes
+2018-05-10 01:06:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1191329124?from=filter&spread=commsearch_p&position=106&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:06:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1191329124?from=filter&spread=commsearch_p&position=106&kwtype=filter&now_time=1525885464>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885617.136,
+ 'description': None,
+ 'down_payment': u'54.00',
+ 'house_address': u'\u6a1f\u6df1\u8def',
+ 'house_name': u'\u4e30\u6cf0\u6a61\u6811\u6eaa\u8c37',
+ 'id': '61470f00-53ab-11e8-b020-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'180',
+ 'type': u'used',
+ 'unit_price': u'15652',
+ 'url': 'https://dg.anjuke.com/prop/view/A1191329124?from=filter&spread=commsearch_p&position=106&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:01 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  327 ms | size: 33582 bytes
+2018-05-10 01:07:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1213356486?from=filter&spread=commsearch_p&position=105&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1213356486?from=filter&spread=commsearch_p&position=105&kwtype=filter&now_time=1525885464>
+{'build_year': u'2010',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885622.011,
+ 'description': None,
+ 'down_payment': u'69.00',
+ 'house_address': u'\u897f\u57ce\u8def',
+ 'house_name': u'\u957f\u8679\u767e\u835f\u82b1\u56ed',
+ 'id': '642eecae-53ab-11e8-b09f-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'230',
+ 'type': u'used',
+ 'unit_price': u'17692',
+ 'url': 'https://dg.anjuke.com/prop/view/A1213356486?from=filter&spread=commsearch_p&position=105&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:06 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 34573 bytes
+2018-05-10 01:07:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1210541927?from=filter&spread=commsearch_p&position=104&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1210541927?from=filter&spread=commsearch_p&position=104&kwtype=filter&now_time=1525885464>
+{'build_year': u'2013',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885626.23,
+ 'description': None,
+ 'down_payment': u'120.00',
+ 'house_address': u'\u4e1c\u839e\u5e02\u94f6\u6cb3\u4e2d\u8def121\u53f7',
+ 'house_name': u'\u5bcc\u76c8\u5c71\u6c34\u534e\u5e9c',
+ 'id': '66b2b161-53ab-11e8-b8f5-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'400',
+ 'type': u'used',
+ 'unit_price': u'16000',
+ 'url': 'https://dg.anjuke.com/prop/view/A1210541927?from=filter&spread=commsearch_p&position=104&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:10 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  313 ms | size: 33550 bytes
+2018-05-10 01:07:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1197647841?from=filter&spread=commsearch_p&position=103&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1197647841?from=filter&spread=commsearch_p&position=103&kwtype=filter&now_time=1525885464>
+{'build_year': u'2006',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885630.964,
+ 'description': None,
+ 'down_payment': u'36.00',
+ 'house_address': u'\u8354\u666f\u5927\u9053',
+ 'house_name': u'\u8354\u666f\u5c71\u5e84',
+ 'id': '69850b40-53ab-11e8-bf2d-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'120',
+ 'type': u'used',
+ 'unit_price': u'10909',
+ 'url': 'https://dg.anjuke.com/prop/view/A1197647841?from=filter&spread=commsearch_p&position=103&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:14 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  281 ms | size: 33672 bytes
+2018-05-10 01:07:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1171840756?from=filter&spread=commsearch_p&position=102&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1171840756?from=filter&spread=commsearch_p&position=102&kwtype=filter&now_time=1525885464>
+{'build_year': u'2013',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885635.105,
+ 'description': None,
+ 'down_payment': u'97.20',
+ 'house_address': u'\u5b9d\u5c71\u8def',
+ 'house_name': u'\u7eff\u8335\u6e29\u838e\u5821',
+ 'id': '6bfce90f-53ab-11e8-a392-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'324',
+ 'type': u'used',
+ 'unit_price': u'18947',
+ 'url': 'https://dg.anjuke.com/prop/view/A1171840756?from=filter&spread=commsearch_p&position=102&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:20 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  312 ms | size: 34278 bytes
+2018-05-10 01:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1205383353?from=filter&spread=commsearch_p&position=101&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1205383353?from=filter&spread=commsearch_p&position=101&kwtype=filter&now_time=1525885464>
+{'build_year': u'2005',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885640.433,
+ 'description': None,
+ 'down_payment': u'47.40',
+ 'house_address': u'\u4e1c\u839e\u5e02\u94f6\u6cb3\u4e2d\u8def121\u53f7',
+ 'house_name': u'\u5bcc\u76c8\u5c71\u6c34\u534e\u5e9c',
+ 'id': '6f29e611-53ab-11e8-85ce-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'158',
+ 'type': u'used',
+ 'unit_price': u'17752',
+ 'url': 'https://dg.anjuke.com/prop/view/A1205383353?from=filter&spread=commsearch_p&position=101&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:26 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  280 ms | size: 33658 bytes
+2018-05-10 01:07:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1188774212?from=filter&spread=commsearch_p&position=100&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1188774212?from=filter&spread=commsearch_p&position=100&kwtype=filter&now_time=1525885464>
+{'build_year': u'2008',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885646.371,
+ 'description': None,
+ 'down_payment': u'13.80',
+ 'house_address': u'\u6c38\u5b81\u8def',
+ 'house_name': u'\u6021\u4e50\u5e7f\u573a',
+ 'id': '72b3f730-53ab-11e8-835c-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'46',
+ 'type': u'used',
+ 'unit_price': u'6969',
+ 'url': 'https://dg.anjuke.com/prop/view/A1188774212?from=filter&spread=commsearch_p&position=100&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:31 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  296 ms | size: 32798 bytes
+2018-05-10 01:07:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1187612734?from=filter&spread=commsearch_p&position=99&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1187612734?from=filter&spread=commsearch_p&position=99&kwtype=filter&now_time=1525885464>
+{'build_year': u'2000',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885652.09,
+ 'description': None,
+ 'down_payment': u'20.40',
+ 'house_address': u'\u534e\u7fe0\u8def',
+ 'house_name': u'\u534e\u90fd\u82b1\u56ed',
+ 'id': '761c9d9e-53ab-11e8-a508-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'68',
+ 'type': u'used',
+ 'unit_price': u'6476',
+ 'url': 'https://dg.anjuke.com/prop/view/A1187612734?from=filter&spread=commsearch_p&position=99&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:37 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 30778 bytes
+2018-05-10 01:07:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1201431839?from=filter&spread=commsearch_p&position=98&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1201431839?from=filter&spread=commsearch_p&position=98&kwtype=filter&now_time=1525885464>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885657.558,
+ 'description': None,
+ 'down_payment': u'12.90',
+ 'house_address': u'\u6a1f\u6df1\u8def\u4e2d20\u53f7',
+ 'house_name': u'\u661f\u8000\u56fd\u9645',
+ 'id': '795ef761-53ab-11e8-944a-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'43',
+ 'type': u'used',
+ 'unit_price': u'10000',
+ 'url': 'https://dg.anjuke.com/prop/view/A1201431839?from=filter&spread=commsearch_p&position=98&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:41 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 32404 bytes
+2018-05-10 01:07:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1210510038?from=filter&spread=commsearch_p&position=97&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1210510038?from=filter&spread=commsearch_p&position=97&kwtype=filter&now_time=1525885464>
+{'build_year': u'2014',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885661.637,
+ 'description': None,
+ 'down_payment': u'40.50',
+ 'house_address': u'\u6a1f\u6df1\u5927\u9053',
+ 'house_name': u'\u5609\u591a\u5229\u5c71\u82b1\u56ed',
+ 'id': '7bcd5f51-53ab-11e8-aa72-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'135',
+ 'type': u'used',
+ 'unit_price': u'11344',
+ 'url': 'https://dg.anjuke.com/prop/view/A1210510038?from=filter&spread=commsearch_p&position=97&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:45 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  296 ms | size: 32496 bytes
+2018-05-10 01:07:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1143869622?from=filter&spread=commsearch_p&position=96&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1143869622?from=filter&spread=commsearch_p&position=96&kwtype=filter&now_time=1525885464>
+{'build_year': u'1999',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885665.98,
+ 'description': None,
+ 'down_payment': u'29.10',
+ 'house_address': u'\u5e1d\u96c5\u8857',
+ 'house_name': u'\u9f99\u56fe\u82b1\u56ed',
+ 'id': '7e640fc0-53ab-11e8-a1ff-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'97',
+ 'type': u'used',
+ 'unit_price': u'10430',
+ 'url': 'https://dg.anjuke.com/prop/view/A1143869622?from=filter&spread=commsearch_p&position=96&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:51 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  342 ms | size: 33772 bytes
+2018-05-10 01:07:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1192863187?from=filter&spread=commsearch_p&position=95&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1192863187?from=filter&spread=commsearch_p&position=95&kwtype=filter&now_time=1525885464>
+{'build_year': u'2011',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885671.824,
+ 'description': None,
+ 'down_payment': u'44.10',
+ 'house_address': u'\u5357\u57ce\u5927\u9053',
+ 'house_name': u'\u9999\u6a1f\u56fd\u9645',
+ 'id': '81dfc900-53ab-11e8-b378-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'147',
+ 'type': u'used',
+ 'unit_price': u'17294',
+ 'url': 'https://dg.anjuke.com/prop/view/A1192863187?from=filter&spread=commsearch_p&position=95&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:07:56 [scrapy.extensions.logstats] INFO: Crawled 60 pages (at 12 pages/min), scraped 58 items (at 12 items/min)
+2018-05-10 01:07:56 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  328 ms | size: 33388 bytes
+2018-05-10 01:07:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1207317944?from=filter&spread=commsearch_p&position=94&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:07:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1207317944?from=filter&spread=commsearch_p&position=94&kwtype=filter&now_time=1525885464>
+{'build_year': u'2007',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885676.949,
+ 'description': None,
+ 'down_payment': u'19.50',
+ 'house_address': u'\u4e1c\u57ce\u5927\u90532\u53f7',
+ 'house_name': u'\u5fa1\u666f\u82b1\u56ed',
+ 'id': '84edcc4f-53ab-11e8-8caa-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'65',
+ 'type': u'used',
+ 'unit_price': u'10655',
+ 'url': 'https://dg.anjuke.com/prop/view/A1207317944?from=filter&spread=commsearch_p&position=94&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:02 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  358 ms | size: 34164 bytes
+2018-05-10 01:08:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1205810162?from=filter&spread=commsearch_p&position=93&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1205810162?from=filter&spread=commsearch_p&position=93&kwtype=filter&now_time=1525885464>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885682.871,
+ 'description': None,
+ 'down_payment': u'36.00',
+ 'house_address': u'\u6a1f\u6df1\u8def',
+ 'house_name': u'\u4e30\u6cf0\u6a61\u6811\u6eaa\u8c37',
+ 'id': '88756c70-53ab-11e8-9779-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'120',
+ 'type': u'used',
+ 'unit_price': u'15000',
+ 'url': 'https://dg.anjuke.com/prop/view/A1205810162?from=filter&spread=commsearch_p&position=93&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:07 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 31138 bytes
+2018-05-10 01:08:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1204243370?from=filter&spread=commsearch_p&position=92&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1204243370?from=filter&spread=commsearch_p&position=92&kwtype=filter&now_time=1525885464>
+{'build_year': u'2010',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885687.371,
+ 'description': None,
+ 'down_payment': u'133.50',
+ 'house_address': u'\u4e1c\u57ce\u8def',
+ 'house_name': u'\u4e2d\u60e0\u9999\u6a1f\u7eff\u6d32(\u522b\u5885)',
+ 'id': '8b2411b0-53ab-11e8-a147-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'445',
+ 'type': u'used',
+ 'unit_price': u'19347',
+ 'url': 'https://dg.anjuke.com/prop/view/A1204243370?from=filter&spread=commsearch_p&position=92&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:11 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 31176 bytes
+2018-05-10 01:08:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1203033148?from=filter&spread=commsearch_p&position=91&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1203033148?from=filter&spread=commsearch_p&position=91&kwtype=filter&now_time=1525885464>
+{'build_year': u'2004',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885691.387,
+ 'description': None,
+ 'down_payment': u'21.00',
+ 'house_address': u'\u8354\u82d1\u8def',
+ 'house_name': u'\u4e3d\u57ce\u82b1\u56ed',
+ 'id': '8d88dcb0-53ab-11e8-a546-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'70',
+ 'type': u'used',
+ 'unit_price': u'7526',
+ 'url': 'https://dg.anjuke.com/prop/view/A1203033148?from=filter&spread=commsearch_p&position=91&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:17 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 31308 bytes
+2018-05-10 01:08:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1199929592?from=filter&spread=commsearch_p&position=90&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1199929592?from=filter&spread=commsearch_p&position=90&kwtype=filter&now_time=1525885464>
+{'build_year': u'2016',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885697.168,
+ 'description': None,
+ 'down_payment': u'90.00',
+ 'house_address': u'\u5b9d\u5c71\u8def',
+ 'house_name': u'\u9526\u591a\u5b9d\u5409\u7965\u9f99',
+ 'id': '90faf900-53ab-11e8-b456-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'300',
+ 'type': u'used',
+ 'unit_price': u'20979',
+ 'url': 'https://dg.anjuke.com/prop/view/A1199929592?from=filter&spread=commsearch_p&position=90&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:21 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 33866 bytes
+2018-05-10 01:08:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1183449296?from=filter&spread=commsearch_p&position=89&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1183449296?from=filter&spread=commsearch_p&position=89&kwtype=filter&now_time=1525885464>
+{'build_year': u'2006',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885702.059,
+ 'description': None,
+ 'down_payment': u'34.80',
+ 'house_address': u'\u6c38\u9686\u8857',
+ 'house_name': u'\u7fe0\u6021\u82b1\u56ed',
+ 'id': '93e547b0-53ab-11e8-ad60-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'116',
+ 'type': u'used',
+ 'unit_price': u'11836',
+ 'url': 'https://dg.anjuke.com/prop/view/A1183449296?from=filter&spread=commsearch_p&position=89&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:25 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  344 ms | size: 33991 bytes
+2018-05-10 01:08:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1204848293?from=filter&spread=commsearch_p&position=88&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1204848293?from=filter&spread=commsearch_p&position=88&kwtype=filter&now_time=1525885464>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885706.012,
+ 'description': None,
+ 'down_payment': u'131.40',
+ 'house_address': u'\u4e1c\u57ce\u8def',
+ 'house_name': u'\u4e2d\u60e0\u9999\u6a1f\u7eff\u6d32',
+ 'id': '964075c0-53ab-11e8-8cc3-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'438',
+ 'type': u'used',
+ 'unit_price': u'17176',
+ 'url': 'https://dg.anjuke.com/prop/view/A1204848293?from=filter&spread=commsearch_p&position=88&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:29 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  500 ms | size: 33027 bytes
+2018-05-10 01:08:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1183681570?from=filter&spread=commsearch_p&position=87&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1183681570?from=filter&spread=commsearch_p&position=87&kwtype=filter&now_time=1525885464>
+{'build_year': u'2009',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885709.918,
+ 'description': None,
+ 'down_payment': u'44.40',
+ 'house_address': u'\u6c38\u9686\u8857',
+ 'house_name': u'\u9f99\u817e\u82b1\u56ed',
+ 'id': '989477de-53ab-11e8-84a8-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'148',
+ 'type': u'used',
+ 'unit_price': u'11212',
+ 'url': 'https://dg.anjuke.com/prop/view/A1183681570?from=filter&spread=commsearch_p&position=87&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:34 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  312 ms | size: 33788 bytes
+2018-05-10 01:08:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1197994534?from=filter&spread=commsearch_p&position=86&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1197994534?from=filter&spread=commsearch_p&position=86&kwtype=filter&now_time=1525885464>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885714.543,
+ 'description': None,
+ 'down_payment': u'75.00',
+ 'house_address': u'\u4e1c\u57ce\u8def',
+ 'house_name': u'\u4e2d\u60e0\u9999\u6a1f\u7eff\u6d32',
+ 'id': '9b562ff0-53ab-11e8-8ddb-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'250',
+ 'type': u'used',
+ 'unit_price': u'20000',
+ 'url': 'https://dg.anjuke.com/prop/view/A1197994534?from=filter&spread=commsearch_p&position=86&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:38 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 33213 bytes
+2018-05-10 01:08:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1208705669?from=filter&spread=commsearch_p&position=85&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1208705669?from=filter&spread=commsearch_p&position=85&kwtype=filter&now_time=1525885464>
+{'build_year': u'2002',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885718.731,
+ 'description': None,
+ 'down_payment': u'21.30',
+ 'house_address': u'\u5e1d\u96c5\u8857',
+ 'house_name': u'\u5e1d\u96c5\u82b1\u56ed',
+ 'id': '9dd539b0-53ab-11e8-a614-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'71',
+ 'type': u'used',
+ 'unit_price': u'9466',
+ 'url': 'https://dg.anjuke.com/prop/view/A1208705669?from=filter&spread=commsearch_p&position=85&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:43 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  282 ms | size: 33022 bytes
+2018-05-10 01:08:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1208691194?from=filter&spread=commsearch_p&position=84&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1208691194?from=filter&spread=commsearch_p&position=84&kwtype=filter&now_time=1525885464>
+{'build_year': u'2017',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885723.997,
+ 'description': None,
+ 'down_payment': u'37.20',
+ 'house_address': u'\u5148\u5a01\u8def',
+ 'house_name': u'\u9f99\u5a01\u82b1\u56ed',
+ 'id': 'a0f8c0cf-53ab-11e8-ad04-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'124',
+ 'type': u'used',
+ 'unit_price': u'12277',
+ 'url': 'https://dg.anjuke.com/prop/view/A1208691194?from=filter&spread=commsearch_p&position=84&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:49 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  312 ms | size: 33555 bytes
+2018-05-10 01:08:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1190165312?from=filter&spread=commsearch_p&position=83&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1190165312?from=filter&spread=commsearch_p&position=83&kwtype=filter&now_time=1525885464>
+{'build_year': u'2010',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885729.731,
+ 'description': None,
+ 'down_payment': u'48.00',
+ 'house_address': u'\u6cbf\u6cb3\u8857',
+ 'house_name': u'\u78a7\u6cb3\u82b1\u56ed',
+ 'id': 'a463b130-53ab-11e8-bf1f-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'160',
+ 'type': u'used',
+ 'unit_price': u'17021',
+ 'url': 'https://dg.anjuke.com/prop/view/A1190165312?from=filter&spread=commsearch_p&position=83&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:54 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  282 ms | size: 34299 bytes
+2018-05-10 01:08:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1203147579?from=filter&spread=commsearch_p&position=82&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1203147579?from=filter&spread=commsearch_p&position=82&kwtype=filter&now_time=1525885464>
+{'build_year': u'2013',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885734.45,
+ 'description': None,
+ 'down_payment': u'46.50',
+ 'house_address': u'\u4e1c\u57ce\u8def',
+ 'house_name': u'\u4e2d\u60e0\u9999\u6a1f\u7eff\u6d32',
+ 'id': 'a733c121-53ab-11e8-a0a4-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'155',
+ 'type': u'used',
+ 'unit_price': u'19620',
+ 'url': 'https://dg.anjuke.com/prop/view/A1203147579?from=filter&spread=commsearch_p&position=82&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:08:56 [scrapy.extensions.logstats] INFO: Crawled 73 pages (at 13 pages/min), scraped 71 items (at 13 items/min)
+2018-05-10 01:08:59 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  296 ms | size: 34252 bytes
+2018-05-10 01:08:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1208198711?from=filter&spread=commsearch_p&position=81&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:08:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1208198711?from=filter&spread=commsearch_p&position=81&kwtype=filter&now_time=1525885464>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885739.513,
+ 'description': None,
+ 'down_payment': u'95.40',
+ 'house_address': u'\u4e1c\u57ce\u8def',
+ 'house_name': u'\u4e2d\u60e0\u9999\u6a1f\u7eff\u6d32',
+ 'id': 'aa384e8f-53ab-11e8-8e06-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'318',
+ 'type': u'used',
+ 'unit_price': u'18171',
+ 'url': 'https://dg.anjuke.com/prop/view/A1208198711?from=filter&spread=commsearch_p&position=81&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:09:03 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  266 ms | size: 33469 bytes
+2018-05-10 01:09:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1175552954?from=filter&spread=commsearch_p&position=80&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:09:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1175552954?from=filter&spread=commsearch_p&position=80&kwtype=filter&now_time=1525885464>
+{'build_year': u'2013',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885743.278,
+ 'description': None,
+ 'down_payment': u'56.40',
+ 'house_address': u'\u4e1c\u839e\u5e02\u94f6\u6cb3\u4e2d\u8def121\u53f7',
+ 'house_name': u'\u5bcc\u76c8\u5c71\u6c34\u534e\u5e9c',
+ 'id': 'ac76cce1-53ab-11e8-a200-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'188',
+ 'type': u'used',
+ 'unit_price': u'17904',
+ 'url': 'https://dg.anjuke.com/prop/view/A1175552954?from=filter&spread=commsearch_p&position=80&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:09:08 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  250 ms | size: 33849 bytes
+2018-05-10 01:09:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1203894213?from=filter&spread=commsearch_p&position=79&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:09:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1203894213?from=filter&spread=commsearch_p&position=79&kwtype=filter&now_time=1525885464>
+{'build_year': u'2012',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885748.772,
+ 'description': None,
+ 'down_payment': u'119.40',
+ 'house_address': u'\u4e1c\u839e\u5e02\u94f6\u6cb3\u4e2d\u8def121\u53f7',
+ 'house_name': u'\u5bcc\u76c8\u5c71\u6c34\u534e\u5e9c',
+ 'id': 'afbd1e40-53ab-11e8-a0fe-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'398',
+ 'type': u'used',
+ 'unit_price': u'14113',
+ 'url': 'https://dg.anjuke.com/prop/view/A1203894213?from=filter&spread=commsearch_p&position=79&kwtype=filter&now_time=1525885464'}
+2018-05-10 01:09:13 [scrapy.extensions.throttle] INFO: slot: dg.anjuke.com | conc: 1 | delay: 4000 ms (+0) | latency:  287 ms | size: 33806 bytes
+2018-05-10 01:09:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://dg.anjuke.com/prop/view/A1212602854?from=filter&spread=commsearch_p&position=78&kwtype=filter&now_time=1525885464> (referer: https://dg.anjuke.com/sale/zhangmutou/p2/)
+2018-05-10 01:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://dg.anjuke.com/prop/view/A1212602854?from=filter&spread=commsearch_p&position=78&kwtype=filter&now_time=1525885464>
+{'build_year': u'2013',
+ 'city': '\xe4\xb8\x9c\xe8\x8e\x9e',
+ 'county': '\xe6\xa8\x9f\xe6\x9c\xa8\xe5\xa4?',
+ 'crawl_time': 1525885753.941,
+ 'description': None,
+ 'down_payment': u'156.00',
+ 'house_address': u'\u5b9d\u5c71\u8def',
+ 'house_name': u'\u4fdd\u5229\u751f\u6001\u57ce(\u522b\u5885)',
+ 'id': 'b2d1d84f-53ab-11e8-a5de-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u5b89\u5c45\u5ba2',
+ 'total_price': u'520',
+ 'type': u'used',
+ 'unit_price': u'20312',
+ 'url': 'https://dg.anjuke.com/prop/view/A1212602854?from=filter&spread=commsearch_p&position=78&kwtype=filter&now_time=1525885464'}

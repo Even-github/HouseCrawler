@@ -1,0 +1,224 @@
+2018-05-11 01:03:25 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: HouseCrawler)
+2018-05-11 01:03:25 [scrapy.utils.log] INFO: Overridden settings: {'AUTOTHROTTLE_MAX_DELAY': 30, 'NEWSPIDER_MODULE': 'HouseCrawler.spiders', 'LOG_FILE': 'logs\\HouseCrawler\\LianjiaNewHouseSpider\\0b99f9de547411e8b6e3382c4a16ce75.log', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'SPIDER_MODULES': ['HouseCrawler.spiders'], 'AUTOTHROTTLE_START_DELAY': 6, 'BOT_NAME': 'HouseCrawler', 'AUTOTHROTTLE_ENABLED': True, 'DOWNLOAD_DELAY': 4, 'AUTOTHROTTLE_DEBUG': True}
+2018-05-11 01:03:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-05-11 01:03:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['HouseCrawler.middlewares.AnjukeUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-05-11 01:03:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-11 01:03:26 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-05-11 01:03:26 [scrapy.core.engine] INFO: Spider opened
+2018-05-11 01:03:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-11 01:03:26 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-05-11 01:03:26 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (-2000) | latency:  598 ms | size: 25247 bytes
+2018-05-11 01:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/futianqu/> (referer: None)
+2018-05-11 01:03:36 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency:  956 ms | size: 24470 bytes
+2018-05-11 01:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_ljhwabamd/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:03:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_ljhwabamd/>
+{'build_year': u'2017',
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971816.141,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u798f\u7530\u5317\u73af\u5927\u9053\u4e0e\u6885\u6797\u8def\u4ea4\u6c47\u5904\u4e1c\u5317\u89d2(\u4e0b\u6885\u6797\u6751\u9644\u8fd1)',
+ 'house_name': u'\u7eff\u666f\u8679\u6e7e',
+ 'id': '13e367cf-5474-11e8-a22f-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'80000',
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_ljhwabamd/'}
+2018-05-11 01:03:39 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency:  590 ms | size: 18260 bytes
+2018-05-11 01:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_zzwadlfl/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:03:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_zzwadlfl/>
+{'build_year': None,
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971819.361,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': None,
+ 'house_name': None,
+ 'id': '15cebd0f-5474-11e8-bc6a-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': None,
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_zzwadlfl/'}
+2018-05-11 01:03:44 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency:  802 ms | size: 23531 bytes
+2018-05-11 01:03:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_bstabsaw/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:03:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_bstabsaw/>
+{'build_year': u'2019',
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971824.543,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u6682\u65e0',
+ 'house_name': u'\u5b9d\u6811\u53f0',
+ 'id': '18e572f0-5474-11e8-93bf-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'79500',
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_bstabsaw/'}
+2018-05-11 01:03:50 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency: 1079 ms | size: 22373 bytes
+2018-05-11 01:03:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_hbyfabdxy/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:03:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_hbyfabdxy/>
+{'build_year': u'2019',
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971830.319,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u798f\u7530\u6df1\u5733\u5e02\u798f\u7530\u533a\u632f\u534e\u8def89\u53f7',
+ 'house_name': u'\u6052\u90a6\u58f9\u5cef',
+ 'id': '1c56cbf0-5474-11e8-90cc-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'85000',
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_hbyfabdxy/'}
+2018-05-11 01:03:55 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency:  599 ms | size: 22272 bytes
+2018-05-11 01:03:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_wkjsfabdxi/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:03:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_wkjsfabdxi/>
+{'build_year': u'2018',
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971835.636,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u798f\u7530\u533a\u5b89\u6258\u5c71\u516d\u8def\u4e0e\u4fa8\u9999\u4e94\u9053\u4ea4\u6c47\u5904',
+ 'house_name': u'\u4e07\u79d1\u7467\u5c71\u5e9c',
+ 'id': '1f821b40-5474-11e8-8e0a-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'99000',
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_wkjsfabdxi/'}
+2018-05-11 01:04:01 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency: 1073 ms | size: 24393 bytes
+2018-05-11 01:04:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_bsmidtownabcqp/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:04:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_bsmidtownabcqp/>
+{'build_year': u'2017',
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971842.058,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u798f\u7530\u533a\u6c99\u5934\u8857\u9053\u77f3\u53a6\u5317\u516b\u88576\u53f7',
+ 'house_name': u'\u5b9d\u751fMidtown',
+ 'id': '235606a1-5474-11e8-81c2-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'95000',
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_bsmidtownabcqp/'}
+2018-05-11 01:04:06 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency:  738 ms | size: 20318 bytes
+2018-05-11 01:04:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_ljsdhyabcbj/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:04:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_ljsdhyabcbj/>
+{'build_year': u'2015',
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971846.935,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u798f\u7530\u533a\u9999\u871c\u6e56\u5317\u83b2\u5858\u5c3e\u7247\u533a\u798f\u9f99\u8def\u4e0e\u5317\u73af\u8def\u4ea4\u6c47\u5904',
+ 'house_name': u'\u5170\u6c5f\u5c71\u7b2c',
+ 'id': '263e0b61-5474-11e8-97ea-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'150000',
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_ljsdhyabcbj/'}
+2018-05-11 01:04:11 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency:  818 ms | size: 22645 bytes
+2018-05-11 01:04:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_syscabbue/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:04:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_syscabbue/>
+{'build_year': u'2016',
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971851.473,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u6df1\u5733\u5e02\u798f\u7530\u4e2d\u5fc3\u533a\u5317\u7687\u5c97\u8def\u4e0e\u7b0b\u5c97\u897f\u8def\u4ea4\u6c47\u5904\u897f\u5317\u4fa7',
+ 'house_name': u'\u6df1\u4e1a\u4e0a\u57ce',
+ 'id': '28f2a40f-5474-11e8-b22a-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'130000',
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_syscabbue/'}
+2018-05-11 01:04:16 [scrapy.extensions.throttle] INFO: slot: sz.fang.lianjia.com | conc: 1 | delay: 4000 ms (+0) | latency:  658 ms | size: 23501 bytes
+2018-05-11 01:04:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sz.fang.lianjia.com/loupan/p_wkljsdjsdaavmv/> (referer: https://sz.fang.lianjia.com/loupan/futianqu/)
+2018-05-11 01:04:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://sz.fang.lianjia.com/loupan/p_wkljsdjsdaavmv/>
+{'build_year': u'2017',
+ 'city': '\xe6\xb7\xb1\xe5\x9c\xb3',
+ 'county': '\xe7\xa6\x8f\xe7\x94\xb0',
+ 'crawl_time': 1525971856.331,
+ 'description': None,
+ 'down_payment': None,
+ 'house_address': u'\u798f\u7530\u533a\u9999\u871c\u6e56\u534a\u5c71\u83b2\u5858\u5c3e\u7247\u533a\u5317\u73af\u5927\u9053\u4ee5\u5317',
+ 'house_name': u'\u4e07\u79d1\u5170\u6c5f\u5c71\u7b2c\xb7\u7467\u5c71\u9053',
+ 'id': '2bd7c29e-5474-11e8-873e-382c4a16ce75',
+ 'monthly_payment': None,
+ 'province': u'\u5e7f\u4e1c',
+ 'source': u'\u94fe\u5bb6\u7f51',
+ 'total_price': None,
+ 'type': u'new',
+ 'unit_price': u'82000',
+ 'url': 'https://sz.fang.lianjia.com/loupan/p_wkljsdjsdaavmv/'}
+2018-05-11 01:04:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-11 01:04:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 20536,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 234438,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 10, 17, 4, 16, 420000),
+ 'item_scraped_count': 9,
+ 'log_count/DEBUG': 20,
+ 'log_count/INFO': 17,
+ 'request_depth_max': 1,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2018, 5, 10, 17, 3, 26, 168000)}
+2018-05-11 01:04:16 [scrapy.core.engine] INFO: Spider closed (finished)
